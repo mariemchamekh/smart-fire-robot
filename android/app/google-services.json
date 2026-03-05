@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "418044323270",
+    "project_id": "smart-fire-robot",
+    "storage_bucket": "smart-fire-robot.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418044323270:android:474bb441e1e33934c97ec7",
+        "android_client_info": {
+          "package_name": "com.example.smart_fire_robot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAez9z_vx02Xqi2rA01XrYQdc-OqSZdr3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
