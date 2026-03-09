@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import '../widgets/app_drawer.dart';
 import '../widgets/theme_toggle_button.dart';
 import '../theme/app_colors.dart';
 
@@ -14,7 +13,6 @@ class CameraScreen extends StatelessWidget {
     final subColor = isDark ? AppColors.subText : AppColors.subTextLight;
 
     return Scaffold(
-      drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text("Live Camera"),
         actions: const [ThemeToggleButton()],

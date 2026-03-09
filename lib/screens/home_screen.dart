@@ -1,43 +1,26 @@
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import '../services/user_model.dart';
-import '../services/theme_notifier.dart';
-import '../widgets/app_logo.dart';
-import '../widgets/app_drawer.dart';
 import '../theme/app_colors.dart';
+import '../widgets/app_navbar.dart';
 import 'admin_screen.dart';
-import 'user_screen.dart';
-import 'emergency_screen.dart';
-import 'robot_map_screen.dart';
 import 'camera_screen.dart';
-import 'login_screen.dart';
 
-/// Écran d'accueil après connexion.
-/// Redirige et affiche les fonctionnalités selon le rôle.
+/// Contenu de l'onglet Home.
+/// Le Scaffold et la navbar sont gérés par MainShell.
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final user = authService.currentUser;
-
-    // Sécurité : si pas connecté, retour au login
-    if (user == null) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => const LoginScreen()),
-        );
-      });
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
-    }
-
+    if (user == null) return const SizedBox.shrink();
     return user.isAdmin ? _AdminHome(user: user) : _OwnerHome(user: user);
   }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// HOME ADMIN — accès complet
+// HOME ADMIN
 // ─────────────────────────────────────────────────────────────────────────────
 class _AdminHome extends StatelessWidget {
   final AppUser user;
@@ -45,80 +28,89 @@ class _AdminHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final textColor = isDark ? AppColors.text : AppColors.textLight;
-    final subColor = isDark ? AppColors.subText : AppColors.subTextLight;
-    final cardColor = isDark ? AppColors.card : AppColors.cardLight;
+    final isDark    = Theme.of(context).brightness == Brightness.dark;
+    final bgColor   = isDark ? AppColors.bg      : AppColors.bgLight;
+    final textColor = isDark ? AppColors.text    : AppColors.textLight;
+    final subColor  = isDark ? AppColors.subText : AppColors.subTextLight;
+    final cardColor = isDark ? AppColors.card    : AppColors.cardLight;
 
-    return Scaffold(
-      drawer: const AppDrawer(),
-      appBar: _buildAppBar(context, isDark, textColor),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          _welcomeBanner(user, isDark, textColor, subColor),
-          const SizedBox(height: 16),
-          // Badge rôle admin
-          _roleBadge(user, cardColor),
-          const SizedBox(height: 20),
-          Text(
-            "ACCÈS COMPLET",
-            style: TextStyle(
-              color: subColor,
-              fontSize: 11,
-              fontWeight: FontWeight.w700,
-              letterSpacing: 1.4,
+    return Stack(
+      children: [
+        // Background firetree2 sur tout l'écran
+        const Positioned.fill(
+          child: Image(
+            image: AssetImage("assets/images/firetree2.jpg"),
+            fit: BoxFit.cover,
+            opacity: AlwaysStoppedAnimation(0.22),
+          ),
+        ),
+        Positioned.fill(
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  bgColor.withOpacity(0.97),
+                  bgColor.withOpacity(0.80),
+                  bgColor.withOpacity(0.4),
+                ],
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+              ),
             ),
           ),
-          const SizedBox(height: 10),
-          _navCard(
-            context,
-            isDark: isDark,
-            title: "Admin Dashboard",
-            subtitle: "Capteurs, températures, alertes",
-            icon: Icons.admin_panel_settings_outlined,
-            color: AppColors.orange,
-            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AdminScreen())),
+        ),
+        // Contenu
+        SingleChildScrollView(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              _welcomeBanner(user, isDark),
+              const SizedBox(height: 14),
+              _roleBadge(user, cardColor),
+              const SizedBox(height: 20),
+              _sectionLabel("ACCÈS COMPLET", subColor),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
+                title: "Admin Dashboard",
+                subtitle: "Capteurs, températures, alertes",
+                icon: Icons.admin_panel_settings_outlined,
+                color: AppColors.orange,
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const AdminScreen())),
+              ),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
+                title: "Live Camera",
+                subtitle: "Flux vidéo du robot",
+                icon: Icons.videocam_rounded,
+                color: AppColors.red,
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const CameraScreen())),
+              ),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
+                title: "Emergency Alert",
+                subtitle: "Gérer les alertes incendie",
+                icon: Icons.warning_rounded,
+                color: AppColors.redAlert,
+                danger: true,
+                onTap: () {
+                  navNotifier.goTo(NavTab.alert);
+                },
+              ),
+            ],
           ),
-          const SizedBox(height: 10),
-          _navCard(
-            context,
-            isDark: isDark,
-            title: "Robot Map (Live)",
-            subtitle: "Position GPS en temps réel",
-            icon: Icons.map_rounded,
-            color: AppColors.redAlert,
-            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const RobotMapScreen())),
-          ),
-          const SizedBox(height: 10),
-          _navCard(
-            context,
-            isDark: isDark,
-            title: "Live Camera",
-            subtitle: "Flux vidéo du robot",
-            icon: Icons.videocam_rounded,
-            color: AppColors.red,
-            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CameraScreen())),
-          ),
-          const SizedBox(height: 10),
-          _navCard(
-            context,
-            isDark: isDark,
-            title: "Emergency Alert",
-            subtitle: "Gérer les alertes incendie",
-            icon: Icons.warning_rounded,
-            color: AppColors.redAlert,
-            danger: true,
-            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const EmergencyScreen())),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// HOME OWNER — accès limité
+// HOME OWNER
 // ─────────────────────────────────────────────────────────────────────────────
 class _OwnerHome extends StatelessWidget {
   final AppUser user;
@@ -126,25 +118,70 @@ class _OwnerHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final textColor = isDark ? AppColors.text : AppColors.textLight;
-    final subColor = isDark ? AppColors.subText : AppColors.subTextLight;
-    final cardColor = isDark ? AppColors.card : AppColors.cardLight;
+    final isDark    = Theme.of(context).brightness == Brightness.dark;
+    final bgColor   = isDark ? AppColors.bg      : AppColors.bgLight;
+    final subColor  = isDark ? AppColors.subText : AppColors.subTextLight;
+    final cardColor = isDark ? AppColors.card    : AppColors.cardLight;
 
-    return Scaffold(
-      drawer: const AppDrawer(),
-      appBar: _buildAppBar(context, isDark, textColor),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          _welcomeBanner(user, isDark, textColor, subColor),
-          const SizedBox(height: 16),
-          _roleBadge(user, cardColor),
-          const SizedBox(height: 20),
-          // User dashboard complet
-          const UserScreen(),
-        ],
-      ),
+    return Stack(
+      children: [
+        // Background firetree2 sur tout l'écran
+        const Positioned.fill(
+          child: Image(
+            image: AssetImage("assets/images/firetree2.jpg"),
+            fit: BoxFit.cover,
+            opacity: AlwaysStoppedAnimation(0.22),
+          ),
+        ),
+        Positioned.fill(
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  bgColor.withOpacity(0.97),
+                  bgColor.withOpacity(0.80),
+                  bgColor.withOpacity(0.4),
+                ],
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+              ),
+            ),
+          ),
+        ),
+        // Contenu
+        SingleChildScrollView(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              _welcomeBanner(user, isDark),
+              const SizedBox(height: 14),
+              _roleBadge(user, cardColor),
+              const SizedBox(height: 20),
+              _sectionLabel("NAVIGATION RAPIDE", subColor),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
+                title: "Live Camera",
+                subtitle: "Flux vidéo du robot",
+                icon: Icons.videocam_rounded,
+                color: AppColors.red,
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const CameraScreen())),
+              ),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
+                title: "Emergency Alert",
+                subtitle: "Voir les alertes actives",
+                icon: Icons.warning_rounded,
+                color: AppColors.redAlert,
+                danger: true,
+                onTap: () => navNotifier.goTo(NavTab.alert),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
@@ -152,73 +189,39 @@ class _OwnerHome extends StatelessWidget {
 // ─────────────────────────────────────────────────────────────────────────────
 // WIDGETS PARTAGÉS
 // ─────────────────────────────────────────────────────────────────────────────
-AppBar _buildAppBar(BuildContext context, bool isDark, Color textColor) {
-  return AppBar(
-    title: Row(
-      children: const [
-        AppLogo(size: 26, variant: LogoVariant.transparent),
-        SizedBox(width: 8),
-        Text("Smart Fire Robot"),
-      ],
+Widget _sectionLabel(String text, Color color) => Align(
+  alignment: Alignment.centerLeft,
+  child: Text(
+    text,
+    style: TextStyle(
+      color: color, fontSize: 11,
+      fontWeight: FontWeight.w700, letterSpacing: 1.4,
     ),
-    actions: [
-      // Toggle thème
-      GestureDetector(
-        onTap: () => themeNotifier.toggle(),
-        child: Container(
-          margin: const EdgeInsets.only(right: 8),
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-          decoration: BoxDecoration(
-            color: AppColors.card.withOpacity(0.5),
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: AppColors.orange.withOpacity(0.3)),
-          ),
-          child: Icon(
-            isDark ? Icons.wb_sunny_rounded : Icons.nightlight_round,
-            color: isDark ? AppColors.orange : AppColors.red,
-            size: 18,
-          ),
-        ),
-      ),
-      // Logout
-      IconButton(
-        icon: const Icon(Icons.logout_rounded, size: 20),
-        color: AppColors.redAlert,
-        onPressed: () {
-          authService.logout();
-          Navigator.pushAndRemoveUntil(
-            context,
-            MaterialPageRoute(builder: (_) => const LoginScreen()),
-                (_) => false,
-          );
-        },
-        tooltip: "Se déconnecter",
-      ),
-    ],
-  );
-}
+  ),
+);
 
-Widget _welcomeBanner(AppUser user, bool isDark, Color textColor, Color subColor) {
+Widget _welcomeBanner(AppUser user, bool isDark) {
+  final bgColor = isDark ? AppColors.bg : AppColors.bgLight;
+
   return Container(
-    height: 160,
+    width: double.infinity,
+    height: 180,
     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(18),
+      borderRadius: BorderRadius.circular(14),
       image: const DecorationImage(
-        image: AssetImage("assets/images/firetree.jpg"),
+        image: AssetImage("assets/images/firetree2.jpg"),
         fit: BoxFit.cover,
-        opacity: 0.45,
+        opacity: 0.5,
       ),
       border: Border.all(color: AppColors.red.withOpacity(0.3)),
+      boxShadow: [BoxShadow(color: AppColors.red.withOpacity(0.15), blurRadius: 16)],
     ),
     child: Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(14),
         gradient: LinearGradient(
-          colors: [
-            (isDark ? AppColors.bg : AppColors.bgLight).withOpacity(0.9),
-            Colors.transparent,
-          ],
+          colors: [bgColor.withOpacity(0.88), Colors.transparent],
           begin: Alignment.bottomLeft,
           end: Alignment.topRight,
         ),
@@ -230,8 +233,7 @@ Widget _welcomeBanner(AppUser user, bool isDark, Color textColor, Color subColor
           Text(
             "Bonjour, ${user.name} 👋",
             style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w900,
+              fontSize: 22, fontWeight: FontWeight.w900,
               color: Colors.white,
               shadows: [Shadow(color: Colors.black54, blurRadius: 6)],
             ),
@@ -239,11 +241,9 @@ Widget _welcomeBanner(AppUser user, bool isDark, Color textColor, Color subColor
           const SizedBox(height: 4),
           Text(
             user.roleLabel,
-            style: TextStyle(
-              color: AppColors.orange,
-              fontWeight: FontWeight.w700,
-              fontSize: 13,
-              shadows: const [Shadow(color: Colors.black54, blurRadius: 4)],
+            style: const TextStyle(
+              color: AppColors.orange, fontWeight: FontWeight.w700, fontSize: 14,
+              shadows: [Shadow(color: Colors.black54, blurRadius: 4)],
             ),
           ),
         ],
@@ -253,31 +253,27 @@ Widget _welcomeBanner(AppUser user, bool isDark, Color textColor, Color subColor
 }
 
 Widget _roleBadge(AppUser user, Color cardColor) {
-  final isAdmin = user.isAdmin;
-  final color = isAdmin ? AppColors.orange : AppColors.green;
-  final icon = isAdmin ? Icons.admin_panel_settings_outlined : Icons.forest_rounded;
+  final color = user.isAdmin ? AppColors.orange : AppColors.green;
+  final icon  = user.isAdmin ? Icons.admin_panel_settings_outlined : Icons.forest_rounded;
 
   return Container(
+    width: double.infinity,
     padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
     decoration: BoxDecoration(
       color: color.withOpacity(0.1),
       borderRadius: BorderRadius.circular(12),
-      border: Border.all(color: color.withOpacity(0.35)),
+      border: Border.all(color: color.withOpacity(0.3)),
     ),
     child: Row(
       mainAxisSize: MainAxisSize.min,
       children: [
         Icon(icon, color: color, size: 18),
         const SizedBox(width: 8),
-        Text(
-          user.roleLabel,
-          style: TextStyle(color: color, fontWeight: FontWeight.w700, fontSize: 13),
-        ),
+        Text(user.roleLabel,
+            style: TextStyle(color: color, fontWeight: FontWeight.w700, fontSize: 13)),
         const SizedBox(width: 8),
-        Text(
-          "• ${user.email}",
-          style: TextStyle(color: color.withOpacity(0.6), fontSize: 12),
-        ),
+        Text("• ${user.email}",
+            style: TextStyle(color: color.withOpacity(0.6), fontSize: 12)),
       ],
     ),
   );
@@ -295,7 +291,7 @@ Widget _navCard(
     }) {
   final cardColor = isDark ? AppColors.card : AppColors.cardLight;
   final textColor = isDark ? AppColors.text : AppColors.textLight;
-  final subColor = isDark ? AppColors.subText : AppColors.subTextLight;
+  final subColor  = isDark ? AppColors.subText : AppColors.subTextLight;
 
   return InkWell(
     onTap: onTap,
@@ -303,10 +299,10 @@ Widget _navCard(
     child: Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: danger ? AppColors.redAlert.withOpacity(0.08) : cardColor,
+        color: danger ? AppColors.redAlert.withOpacity(0.07) : cardColor,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: danger ? AppColors.redAlert.withOpacity(0.35) : color.withOpacity(0.2),
+          color: danger ? AppColors.redAlert.withOpacity(0.3) : color.withOpacity(0.18),
         ),
       ),
       child: Row(
@@ -324,17 +320,13 @@ Widget _navCard(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title,
-                    style: TextStyle(
-                        fontWeight: FontWeight.w800, color: textColor, fontSize: 15)),
+                Text(title, style: TextStyle(fontWeight: FontWeight.w800, color: textColor, fontSize: 15)),
                 const SizedBox(height: 3),
-                Text(subtitle,
-                    style: TextStyle(color: subColor, fontSize: 12)),
+                Text(subtitle, style: TextStyle(color: subColor, fontSize: 12)),
               ],
             ),
           ),
-          Icon(Icons.arrow_forward_ios_rounded,
-              size: 14,
+          Icon(Icons.arrow_forward_ios_rounded, size: 14,
               color: isDark ? AppColors.iconSecondary : AppColors.iconSecLight),
         ],
       ),

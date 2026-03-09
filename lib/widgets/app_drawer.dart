@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 import '../widgets/app_logo.dart';
 import '../widgets/theme_toggle_button.dart';
-import '../screens/user_screen.dart';
+import '../widgets/app_navbar.dart';
 import '../screens/admin_screen.dart';
-import '../screens/emergency_screen.dart';
-import '../screens/robot_map_screen.dart';
 import '../screens/camera_screen.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -20,35 +18,49 @@ class AppDrawer extends StatelessWidget {
       child: SafeArea(
         child: Column(
           children: [
-            _header(context, isDark),
-            const SizedBox(height: 8),
-            // Theme toggle dans le drawer
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // ── Partie scrollable (header + items) ──
+            Expanded(
+              child: ListView(
+                padding: EdgeInsets.zero,
                 children: [
-                  Text(
-                    "Apparence",
-                    style: TextStyle(
-                      color: isDark ? AppColors.subText : AppColors.subTextLight,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 1.1,
+                  _header(context, isDark),
+                  const SizedBox(height: 8),
+                  // Theme toggle dans le drawer
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Apparence",
+                          style: TextStyle(
+                            color: isDark ? AppColors.subText : AppColors.subTextLight,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                            letterSpacing: 1.1,
+                          ),
+                        ),
+                        const ThemeToggleButton(),
+                      ],
                     ),
                   ),
-                  const ThemeToggleButton(),
+                  const Divider(height: 1, indent: 16, endIndent: 16),
+                  const SizedBox(height: 4),
+                  // Items qui switchent vers un onglet du MainShell
+                  _navItem(context, Icons.home_rounded, "Accueil", NavTab.home, isDark),
+                  _navItem(context, Icons.map_rounded, "Robot Map (Live)", NavTab.map, isDark),
+                  _navItem(context, Icons.warning_rounded, "Emergency", NavTab.alert, isDark, danger: true),
+                  _navItem(context, Icons.person_rounded, "Profil", NavTab.profile, isDark),
+                  _navItem(context, Icons.settings_rounded, "Paramètres", NavTab.settings, isDark),
+                  const Divider(height: 1, indent: 16, endIndent: 16),
+                  const SizedBox(height: 4),
+                  // Items qui ouvrent une page séparée (avec leur propre Scaffold)
+                  _pushItem(context, Icons.admin_panel_settings_outlined, "Admin Dashboard", const AdminScreen(), isDark),
+                  _pushItem(context, Icons.videocam_rounded, "Live Camera", const CameraScreen(), isDark),
                 ],
               ),
             ),
-            const Divider(height: 1, indent: 16, endIndent: 16),
-            const SizedBox(height: 4),
-            _item(context, Icons.person_outline_rounded, "User Dashboard", const UserScreen(), isDark),
-            _item(context, Icons.admin_panel_settings_outlined, "Admin Dashboard", const AdminScreen(), isDark),
-            _item(context, Icons.warning_rounded, "Emergency", const EmergencyScreen(), isDark, danger: true),
-            _item(context, Icons.map_rounded, "Robot Map (Live)", const RobotMapScreen(), isDark),
-            _item(context, Icons.videocam_rounded, "Live Camera", const CameraScreen(), isDark),
-            const Spacer(),
+            // ── Footer toujours visible en bas ──
             Container(
               margin: const EdgeInsets.all(14),
               padding: const EdgeInsets.all(12),
@@ -61,11 +73,14 @@ class AppDrawer extends StatelessWidget {
                 children: [
                   const AppLogo(size: 28, variant: LogoVariant.transparent),
                   const SizedBox(width: 10),
-                  Text(
-                    "Smart Fire & Security Robot",
-                    style: TextStyle(
-                      color: isDark ? AppColors.subText : AppColors.subTextLight,
-                      fontSize: 11,
+                  Flexible(
+                    child: Text(
+                      "Smart Fire & Security Robot",
+                      style: TextStyle(
+                        color: isDark ? AppColors.subText : AppColors.subTextLight,
+                        fontSize: 11,
+                      ),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ],
@@ -122,8 +137,9 @@ class AppDrawer extends StatelessWidget {
     );
   }
 
-  Widget _item(BuildContext context, IconData icon, String title, Widget page,
-      bool isDark, {bool danger = false}) {
+  /// Item qui switch vers un onglet du MainShell
+  Widget _navItem(BuildContext context, IconData icon, String title,
+      NavTab tab, bool isDark, {bool danger = false}) {
     return ListTile(
       leading: Icon(
         icon,
@@ -136,6 +152,32 @@ class AppDrawer extends StatelessWidget {
           color: danger
               ? AppColors.redAlert
               : (isDark ? AppColors.text : AppColors.textLight),
+          fontWeight: FontWeight.w600,
+          fontSize: 14,
+        ),
+      ),
+      onTap: () {
+        Navigator.pop(context); // Fermer le drawer
+        navNotifier.goTo(tab);  // Basculer vers l'onglet
+      },
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+    );
+  }
+
+  /// Item qui push une page séparée (avec son propre Scaffold)
+  Widget _pushItem(BuildContext context, IconData icon, String title,
+      Widget page, bool isDark) {
+    return ListTile(
+      leading: Icon(
+        icon,
+        color: AppColors.orange.withOpacity(0.8),
+        size: 22,
+      ),
+      title: Text(
+        title,
+        style: TextStyle(
+          color: isDark ? AppColors.text : AppColors.textLight,
           fontWeight: FontWeight.w600,
           fontSize: 14,
         ),

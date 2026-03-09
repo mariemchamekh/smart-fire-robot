@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../widgets/app_drawer.dart';
 import '../widgets/theme_toggle_button.dart';
 import '../theme/app_colors.dart';
 
@@ -12,7 +11,6 @@ class AdminScreen extends StatelessWidget {
     final cardColor = isDark ? AppColors.card : AppColors.cardLight;
 
     return Scaffold(
-      drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text("Admin Dashboard"),
         actions: const [ThemeToggleButton()],

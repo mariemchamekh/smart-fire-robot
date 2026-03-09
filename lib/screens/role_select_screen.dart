@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 import '../widgets/app_logo.dart';
 import '../widgets/theme_toggle_button.dart';
-import 'user_screen.dart';
+import '../widgets/app_navbar.dart';
+import 'main_shell.dart';
 import 'admin_screen.dart';
-import 'emergency_screen.dart';
 
 class RoleSelectScreen extends StatelessWidget {
   const RoleSelectScreen({super.key});
@@ -104,7 +104,10 @@ class RoleSelectScreen extends StatelessWidget {
                     icon: Icons.person_outline_rounded,
                     title: "User Access",
                     subtitle: "Dashboard + Map + Camera",
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const UserScreen())),
+                    onTap: () {
+                      navNotifier.goTo(NavTab.home);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const MainShell()));
+                    },
                   ),
                   const SizedBox(height: 12),
                   _bigBtn(
@@ -122,7 +125,10 @@ class RoleSelectScreen extends StatelessWidget {
                     icon: Icons.warning_rounded,
                     title: "Emergency Access",
                     subtitle: "Fire Alert + Actions",
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const EmergencyScreen())),
+                    onTap: () {
+                      navNotifier.goTo(NavTab.alert);
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const MainShell()));
+                    },
                     danger: true,
                   ),
                   const SizedBox(height: 28),
