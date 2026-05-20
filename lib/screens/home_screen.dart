@@ -5,6 +5,8 @@ import '../theme/app_colors.dart';
 import '../widgets/app_navbar.dart';
 import 'admin_screen.dart';
 import 'camera_screen.dart';
+import 'history_screen.dart';
+import 'robot_control_screen.dart';
 
 /// Contenu de l'onglet Home.
 /// Le Scaffold et la navbar sont gérés par MainShell.
@@ -92,6 +94,16 @@ class _AdminHome extends StatelessWidget {
               const SizedBox(height: 10),
               _navCard(
                 context, isDark: isDark,
+                title: "Manual Control",
+                subtitle: "Piloter le robot à distance",
+                icon: Icons.gamepad_rounded,
+                color: const Color(0xFF00E5FF),
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const RobotControlScreen())),
+              ),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
                 title: "Emergency Alert",
                 subtitle: "Gérer les alertes incendie",
                 icon: Icons.warning_rounded,
@@ -100,6 +112,16 @@ class _AdminHome extends StatelessWidget {
                 onTap: () {
                   navNotifier.goTo(NavTab.alert);
                 },
+              ),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
+                title: "Historique",
+                subtitle: "Voir les détections passées",
+                icon: Icons.history_rounded,
+                color: AppColors.green,
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const HistoryScreen())),
               ),
             ],
           ),
@@ -171,12 +193,32 @@ class _OwnerHome extends StatelessWidget {
               const SizedBox(height: 10),
               _navCard(
                 context, isDark: isDark,
+                title: "Manual Control",
+                subtitle: "Piloter le robot à distance",
+                icon: Icons.gamepad_rounded,
+                color: const Color(0xFF00E5FF),
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const RobotControlScreen())),
+              ),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
                 title: "Emergency Alert",
                 subtitle: "Voir les alertes actives",
                 icon: Icons.warning_rounded,
                 color: AppColors.redAlert,
                 danger: true,
                 onTap: () => navNotifier.goTo(NavTab.alert),
+              ),
+              const SizedBox(height: 10),
+              _navCard(
+                context, isDark: isDark,
+                title: "Historique",
+                subtitle: "Voir les détections passées",
+                icon: Icons.history_rounded,
+                color: AppColors.green,
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const HistoryScreen())),
               ),
             ],
           ),

@@ -1,0 +1,1298 @@
+{
+  "name": "smart_fire_robot",
+  "path": "c:\\Users\\marie\\Documents\\smart_fire_robot",
+  "type": "directory",
+  "children": [
+    {
+      "name": "android",
+      "type": "folder",
+      "children": [
+        {
+          "name": ".gradle",
+          "type": "folder",
+          "children": [
+            {
+              "name": "8.3",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "checksums",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "checksums.lock",
+                      "type": "file"
+                    },
+                    {
+                      "name": "md5-checksums.bin",
+                      "type": "file"
+                    },
+                    {
+                      "name": "sha1-checksums.bin",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "dependencies-accessors",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "dependencies-accessors.lock",
+                      "type": "file"
+                    },
+                    {
+                      "name": "gc.properties",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "executionHistory",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "executionHistory.bin",
+                      "type": "file"
+                    },
+                    {
+                      "name": "executionHistory.lock",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "fileChanges",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "last-build.bin",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "fileHashes",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "fileHashes.bin",
+                      "type": "file"
+                    },
+                    {
+                      "name": "fileHashes.lock",
+                      "type": "file"
+                    },
+                    {
+                      "name": "resourceHashesCache.bin",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "vcsMetadata",
+                  "type": "folder"
+                },
+                {
+                  "name": "gc.properties",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "buildOutputCleanup",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "buildOutputCleanup.lock",
+                  "type": "file"
+                },
+                {
+                  "name": "cache.properties",
+                  "type": "file"
+                },
+                {
+                  "name": "outputFiles.bin",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "kotlin",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "errors",
+                  "type": "folder"
+                },
+                {
+                  "name": "sessions",
+                  "type": "folder"
+                }
+              ]
+            },
+            {
+              "name": "vcs-1",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "gc.properties",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "file-system.probe",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "app",
+          "type": "folder",
+          "children": [
+            {
+              "name": "src",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "debug",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "AndroidManifest.xml",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "main",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "java",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "io",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "flutter",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "plugins",
+                                  "type": "folder",
+                                  "children": [
+                                    {
+                                      "name": "GeneratedPluginRegistrant.java",
+                                      "type": "file"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "kotlin",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "com",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "example",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "smart_fire_robot",
+                                  "type": "folder",
+                                  "children": [
+                                    {
+                                      "name": "MainActivity.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "res",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "drawable",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "launch_background.xml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "drawable-v21",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "launch_background.xml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "mipmap-hdpi",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "ic_launcher.png",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "mipmap-mdpi",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "ic_launcher.png",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "mipmap-xhdpi",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "ic_launcher.png",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "mipmap-xxhdpi",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "ic_launcher.png",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "mipmap-xxxhdpi",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "ic_launcher.png",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "styles.xml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "values-night",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "styles.xml",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "AndroidManifest.xml",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "profile",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "AndroidManifest.xml",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "build.gradle",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "gradle",
+          "type": "folder",
+          "children": [
+            {
+              "name": "wrapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "gradle-wrapper.jar",
+                  "type": "file"
+                },
+                {
+                  "name": "gradle-wrapper.properties",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        },
+        {
+          "name": "build.gradle",
+          "type": "file"
+        },
+        {
+          "name": "gradle.properties",
+          "type": "file"
+        },
+        {
+          "name": "gradlew",
+          "type": "file"
+        },
+        {
+          "name": "gradlew.bat",
+          "type": "file"
+        },
+        {
+          "name": "local.properties",
+          "type": "file"
+        },
+        {
+          "name": "settings.gradle",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "assets",
+      "type": "folder",
+      "children": [
+        {
+          "name": "images",
+          "type": "folder",
+          "children": [
+            {
+              "name": "firetree.jpg",
+              "type": "file"
+            },
+            {
+              "name": "firetree2.jpg",
+              "type": "file"
+            },
+            {
+              "name": "logoblackbg.jpeg",
+              "type": "file"
+            },
+            {
+              "name": "logonobg.png",
+              "type": "file"
+            },
+            {
+              "name": "logowhitebg.jpeg",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ios",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Flutter",
+          "type": "folder",
+          "children": [
+            {
+              "name": "ephemeral",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "flutter_lldb_helper.py",
+                  "type": "file"
+                },
+                {
+                  "name": "flutter_lldbinit",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "AppFrameworkInfo.plist",
+              "type": "file"
+            },
+            {
+              "name": "Debug.xcconfig",
+              "type": "file"
+            },
+            {
+              "name": "Generated.xcconfig",
+              "type": "file"
+            },
+            {
+              "name": "Release.xcconfig",
+              "type": "file"
+            },
+            {
+              "name": "flutter_export_environment.sh",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Runner",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Assets.xcassets",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "AppIcon.appiconset",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Contents.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-1024x1024@1x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-20x20@1x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-20x20@2x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-20x20@3x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-29x29@1x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-29x29@2x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-29x29@3x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-40x40@1x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-40x40@2x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-40x40@3x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-60x60@2x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-60x60@3x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-76x76@1x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-76x76@2x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Icon-App-83.5x83.5@2x.png",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "LaunchImage.imageset",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Contents.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "LaunchImage.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "LaunchImage@2x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "LaunchImage@3x.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "README.md",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Base.lproj",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "LaunchScreen.storyboard",
+                  "type": "file"
+                },
+                {
+                  "name": "Main.storyboard",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "AppDelegate.swift",
+              "type": "file"
+            },
+            {
+              "name": "GeneratedPluginRegistrant.h",
+              "type": "file"
+            },
+            {
+              "name": "GeneratedPluginRegistrant.m",
+              "type": "file"
+            },
+            {
+              "name": "Info.plist",
+              "type": "file"
+            },
+            {
+              "name": "Runner-Bridging-Header.h",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Runner.xcodeproj",
+          "type": "folder",
+          "children": [
+            {
+              "name": "project.xcworkspace",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "xcshareddata",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "IDEWorkspaceChecks.plist",
+                      "type": "file"
+                    },
+                    {
+                      "name": "WorkspaceSettings.xcsettings",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "contents.xcworkspacedata",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "xcshareddata",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "xcschemes",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Runner.xcscheme",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "project.pbxproj",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Runner.xcworkspace",
+          "type": "folder",
+          "children": [
+            {
+              "name": "xcshareddata",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "IDEWorkspaceChecks.plist",
+                  "type": "file"
+                },
+                {
+                  "name": "WorkspaceSettings.xcsettings",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "contents.xcworkspacedata",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "RunnerTests",
+          "type": "folder",
+          "children": [
+            {
+              "name": "RunnerTests.swift",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "lib",
+      "type": "folder",
+      "children": [
+        {
+          "name": "screens",
+          "type": "folder",
+          "children": [
+            {
+              "name": "admin_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "camera_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "emergency_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "home_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "login_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "map_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "robot_map_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "role_select_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "sign_up_screen.dart",
+              "type": "file"
+            },
+            {
+              "name": "user_screen.dart",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "services",
+          "type": "folder",
+          "children": [
+            {
+              "name": "auth_service.dart",
+              "type": "file"
+            },
+            {
+              "name": "mqtt_service.dart",
+              "type": "file"
+            },
+            {
+              "name": "theme_notifier.dart",
+              "type": "file"
+            },
+            {
+              "name": "user_model.dart",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "theme",
+          "type": "folder",
+          "children": [
+            {
+              "name": "app_colors.dart",
+              "type": "file"
+            },
+            {
+              "name": "app_theme.dart",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "widgets",
+          "type": "folder",
+          "children": [
+            {
+              "name": "app_drawer.dart",
+              "type": "file"
+            },
+            {
+              "name": "app_logo.dart",
+              "type": "file"
+            },
+            {
+              "name": "theme_toggle_button.dart",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "main.dart",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "linux",
+      "type": "folder",
+      "children": [
+        {
+          "name": "flutter",
+          "type": "folder",
+          "children": [
+            {
+              "name": "ephemeral",
+              "type": "folder",
+              "children": [
+                {
+                  "name": ".plugin_symlinks",
+                  "type": "folder"
+                }
+              ]
+            },
+            {
+              "name": "CMakeLists.txt",
+              "type": "file"
+            },
+            {
+              "name": "generated_plugin_registrant.cc",
+              "type": "file"
+            },
+            {
+              "name": "generated_plugin_registrant.h",
+              "type": "file"
+            },
+            {
+              "name": "generated_plugins.cmake",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "runner",
+          "type": "folder",
+          "children": [
+            {
+              "name": "CMakeLists.txt",
+              "type": "file"
+            },
+            {
+              "name": "main.cc",
+              "type": "file"
+            },
+            {
+              "name": "my_application.cc",
+              "type": "file"
+            },
+            {
+              "name": "my_application.h",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        },
+        {
+          "name": "CMakeLists.txt",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "macos",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Flutter",
+          "type": "folder",
+          "children": [
+            {
+              "name": "ephemeral",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Flutter-Generated.xcconfig",
+                  "type": "file"
+                },
+                {
+                  "name": "flutter_export_environment.sh",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "Flutter-Debug.xcconfig",
+              "type": "file"
+            },
+            {
+              "name": "Flutter-Release.xcconfig",
+              "type": "file"
+            },
+            {
+              "name": "GeneratedPluginRegistrant.swift",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Runner",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Assets.xcassets",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "AppIcon.appiconset",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Contents.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "app_icon_1024.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "app_icon_128.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "app_icon_16.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "app_icon_256.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "app_icon_32.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "app_icon_512.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "app_icon_64.png",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Base.lproj",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "MainMenu.xib",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "Configs",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "AppInfo.xcconfig",
+                  "type": "file"
+                },
+                {
+                  "name": "Debug.xcconfig",
+                  "type": "file"
+                },
+                {
+                  "name": "Release.xcconfig",
+                  "type": "file"
+                },
+                {
+                  "name": "Warnings.xcconfig",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "AppDelegate.swift",
+              "type": "file"
+            },
+            {
+              "name": "DebugProfile.entitlements",
+              "type": "file"
+            },
+            {
+              "name": "Info.plist",
+              "type": "file"
+            },
+            {
+              "name": "MainFlutterWindow.swift",
+              "type": "file"
+            },
+            {
+              "name": "Release.entitlements",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Runner.xcodeproj",
+          "type": "folder",
+          "children": [
+            {
+              "name": "project.xcworkspace",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "xcshareddata",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "IDEWorkspaceChecks.plist",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "xcshareddata",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "xcschemes",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Runner.xcscheme",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "project.pbxproj",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Runner.xcworkspace",
+          "type": "folder",
+          "children": [
+            {
+              "name": "xcshareddata",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "IDEWorkspaceChecks.plist",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "contents.xcworkspacedata",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "RunnerTests",
+          "type": "folder",
+          "children": [
+            {
+              "name": "RunnerTests.swift",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "type": "folder",
+      "children": [
+        {
+          "name": "widget_test.dart",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "web",
+      "type": "folder",
+      "children": [
+        {
+          "name": "icons",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Icon-192.png",
+              "type": "file"
+            },
+            {
+              "name": "Icon-512.png",
+              "type": "file"
+            },
+            {
+              "name": "Icon-maskable-192.png",
+              "type": "file"
+            },
+            {
+              "name": "Icon-maskable-512.png",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "favicon.png",
+          "type": "file"
+        },
+        {
+          "name": "index.html",
+          "type": "file"
+        },
+        {
+          "name": "manifest.json",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "windows",
+      "type": "folder",
+      "children": [
+        {
+          "name": "flutter",
+          "type": "folder",
+          "children": [
+            {
+              "name": "ephemeral",
+              "type": "folder",
+              "children": [
+                {
+                  "name": ".plugin_symlinks",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "geolocator_windows",
+                      "type": "file"
+                    },
+                    {
+                      "name": "permission_handler_windows",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CMakeLists.txt",
+              "type": "file"
+            },
+            {
+              "name": "generated_plugin_registrant.cc",
+              "type": "file"
+            },
+            {
+              "name": "generated_plugin_registrant.h",
+              "type": "file"
+            },
+            {
+              "name": "generated_plugins.cmake",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "runner",
+          "type": "folder",
+          "children": [
+            {
+              "name": "resources",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "app_icon.ico",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "CMakeLists.txt",
+              "type": "file"
+            },
+            {
+              "name": "Runner.rc",
+              "type": "file"
+            },
+            {
+              "name": "flutter_window.cpp",
+              "type": "file"
+            },
+            {
+              "name": "flutter_window.h",
+              "type": "file"
+            },
+            {
+              "name": "main.cpp",
+              "type": "file"
+            },
+            {
+              "name": "resource.h",
+              "type": "file"
+            },
+            {
+              "name": "runner.exe.manifest",
+              "type": "file"
+            },
+            {
+              "name": "utils.cpp",
+              "type": "file"
+            },
+            {
+              "name": "utils.h",
+              "type": "file"
+            },
+            {
+              "name": "win32_window.cpp",
+              "type": "file"
+            },
+            {
+              "name": "win32_window.h",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        },
+        {
+          "name": "CMakeLists.txt",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": ".gitignore",
+      "type": "file"
+    },
+    {
+      "name": ".metadata",
+      "type": "file"
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    },
+    {
+      "name": "analysis_options.yaml",
+      "type": "file"
+    },
+    {
+      "name": "pubspec.lock",
+      "type": "file"
+    },
+    {
+      "name": "pubspec.yaml",
+      "type": "file"
+    }
+  ],
+  "metadata": {
+    "generated": "2026-03-04T23:06:34.292Z",
+    "generator": "FileTree Pro Extension",
+    "version": "0.2.0",
+    "showIcons": false,
+    "maxDepth": 10
+  }
+}

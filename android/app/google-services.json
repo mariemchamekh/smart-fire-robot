@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "418044323270",
+    "firebase_url": "https://smart-fire-robot-default-rtdb.firebaseio.com",
     "project_id": "smart-fire-robot",
     "storage_bucket": "smart-fire-robot.firebasestorage.app"
   },

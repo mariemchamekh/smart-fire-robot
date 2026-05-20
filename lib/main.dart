@@ -5,6 +5,8 @@ import 'theme/app_theme.dart';
 import 'screens/login_screen.dart';
 import 'services/theme_notifier.dart';
 
+
+
 export 'services/theme_notifier.dart';
 
 void main() async {
@@ -15,7 +17,6 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
   runApp(const MyApp());
 }
 

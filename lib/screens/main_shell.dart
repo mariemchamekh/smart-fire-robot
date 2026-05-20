@@ -12,6 +12,7 @@ import 'emergency_screen.dart';
 import 'profile_screen.dart';
 import 'settings_screen.dart';
 import 'login_screen.dart';
+import 'robot_control_screen.dart';
 
 /// Shell principal de l'application après connexion.
 /// Contient la navbar et switche entre les écrans.

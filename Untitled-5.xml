@@ -1,0 +1,840 @@
+<svg width="1000" height="7025" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .folder-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; fill: #27ae60; font-weight: bold; }
+      .file-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; fill: #3498db; }
+      .icon { font-family: 'Arial', sans-serif; font-size: 16px; }
+      .line { stroke: #bdc3c7; stroke-width: 1.5; }
+      .background { fill: #f8f9fa; }
+      .header-bg { fill: #ecf0f1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="7025" class="background"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="60" class="header-bg"/>
+  <text x="20" y="25" class="title">📁 File Tree: smart_fire_robot</text>
+  <text x="20" y="45" class="subtitle">Generated: 3/5/2026, 12:06:44 AM | FileTree Pro Extension</text>
+
+  <!-- Tree Structure -->
+    <line x1="15" y1="80" x2="25" y2="80" class="line"/>
+    <text x="30" y="85" class="folder-text">android/</text>
+    <line x1="45" y1="100" x2="45" y2="110" class="line"/>
+    <line x1="45" y1="110" x2="55" y2="110" class="line"/>
+    <text x="60" y="115" class="folder-text">.gradle/</text>
+    <line x1="75" y1="130" x2="75" y2="140" class="line"/>
+    <line x1="75" y1="140" x2="85" y2="140" class="line"/>
+    <text x="90" y="145" class="folder-text">8.3/</text>
+    <line x1="105" y1="160" x2="105" y2="170" class="line"/>
+    <line x1="105" y1="170" x2="115" y2="170" class="line"/>
+    <text x="120" y="175" class="folder-text">checksums/</text>
+    <line x1="135" y1="190" x2="135" y2="200" class="line"/>
+    <line x1="135" y1="200" x2="145" y2="200" class="line"/>
+    <text x="150" y="205" class="file-text">checksums.lock</text>
+    <line x1="135" y1="225" x2="135" y2="235" class="line"/>
+    <line x1="135" y1="235" x2="145" y2="235" class="line"/>
+    <text x="150" y="240" class="file-text">md5-checksums.bin</text>
+    <line x1="135" y1="260" x2="135" y2="270" class="line"/>
+    <line x1="135" y1="270" x2="145" y2="270" class="line"/>
+    <text x="150" y="275" class="file-text">sha1-checksums.bin</text>
+    <line x1="105" y1="330" x2="105" y2="340" class="line"/>
+    <line x1="105" y1="340" x2="115" y2="340" class="line"/>
+    <text x="120" y="345" class="folder-text">dependencies-accessors/</text>
+    <line x1="135" y1="360" x2="135" y2="370" class="line"/>
+    <line x1="135" y1="370" x2="145" y2="370" class="line"/>
+    <text x="150" y="375" class="file-text">dependencies-accessors.lock</text>
+    <line x1="135" y1="395" x2="135" y2="405" class="line"/>
+    <line x1="135" y1="405" x2="145" y2="405" class="line"/>
+    <text x="150" y="410" class="file-text">gc.properties</text>
+    <line x1="105" y1="465" x2="105" y2="475" class="line"/>
+    <line x1="105" y1="475" x2="115" y2="475" class="line"/>
+    <text x="120" y="480" class="folder-text">executionHistory/</text>
+    <line x1="135" y1="495" x2="135" y2="505" class="line"/>
+    <line x1="135" y1="505" x2="145" y2="505" class="line"/>
+    <text x="150" y="510" class="file-text">executionHistory.bin</text>
+    <line x1="135" y1="530" x2="135" y2="540" class="line"/>
+    <line x1="135" y1="540" x2="145" y2="540" class="line"/>
+    <text x="150" y="545" class="file-text">executionHistory.lock</text>
+    <line x1="105" y1="600" x2="105" y2="610" class="line"/>
+    <line x1="105" y1="610" x2="115" y2="610" class="line"/>
+    <text x="120" y="615" class="folder-text">fileChanges/</text>
+    <line x1="135" y1="630" x2="135" y2="640" class="line"/>
+    <line x1="135" y1="640" x2="145" y2="640" class="line"/>
+    <text x="150" y="645" class="file-text">last-build.bin</text>
+    <line x1="105" y1="700" x2="105" y2="710" class="line"/>
+    <line x1="105" y1="710" x2="115" y2="710" class="line"/>
+    <text x="120" y="715" class="folder-text">fileHashes/</text>
+    <line x1="135" y1="730" x2="135" y2="740" class="line"/>
+    <line x1="135" y1="740" x2="145" y2="740" class="line"/>
+    <text x="150" y="745" class="file-text">fileHashes.bin</text>
+    <line x1="135" y1="765" x2="135" y2="775" class="line"/>
+    <line x1="135" y1="775" x2="145" y2="775" class="line"/>
+    <text x="150" y="780" class="file-text">fileHashes.lock</text>
+    <line x1="135" y1="800" x2="135" y2="810" class="line"/>
+    <line x1="135" y1="810" x2="145" y2="810" class="line"/>
+    <text x="150" y="815" class="file-text">resourceHashesCache.bin</text>
+    <line x1="105" y1="870" x2="105" y2="880" class="line"/>
+    <line x1="105" y1="880" x2="115" y2="880" class="line"/>
+    <text x="120" y="885" class="folder-text">vcsMetadata/</text>
+    <line x1="105" y1="905" x2="105" y2="915" class="line"/>
+    <line x1="105" y1="915" x2="115" y2="915" class="line"/>
+    <text x="120" y="920" class="file-text">gc.properties</text>
+    <line x1="75" y1="975" x2="75" y2="985" class="line"/>
+    <line x1="75" y1="985" x2="85" y2="985" class="line"/>
+    <text x="90" y="990" class="folder-text">buildOutputCleanup/</text>
+    <line x1="105" y1="1005" x2="105" y2="1015" class="line"/>
+    <line x1="105" y1="1015" x2="115" y2="1015" class="line"/>
+    <text x="120" y="1020" class="file-text">buildOutputCleanup.lock</text>
+    <line x1="105" y1="1040" x2="105" y2="1050" class="line"/>
+    <line x1="105" y1="1050" x2="115" y2="1050" class="line"/>
+    <text x="120" y="1055" class="file-text">cache.properties</text>
+    <line x1="105" y1="1075" x2="105" y2="1085" class="line"/>
+    <line x1="105" y1="1085" x2="115" y2="1085" class="line"/>
+    <text x="120" y="1090" class="file-text">outputFiles.bin</text>
+    <line x1="75" y1="1145" x2="75" y2="1155" class="line"/>
+    <line x1="75" y1="1155" x2="85" y2="1155" class="line"/>
+    <text x="90" y="1160" class="folder-text">kotlin/</text>
+    <line x1="105" y1="1175" x2="105" y2="1185" class="line"/>
+    <line x1="105" y1="1185" x2="115" y2="1185" class="line"/>
+    <text x="120" y="1190" class="folder-text">errors/</text>
+    <line x1="105" y1="1210" x2="105" y2="1220" class="line"/>
+    <line x1="105" y1="1220" x2="115" y2="1220" class="line"/>
+    <text x="120" y="1225" class="folder-text">sessions/</text>
+    <line x1="75" y1="1280" x2="75" y2="1290" class="line"/>
+    <line x1="75" y1="1290" x2="85" y2="1290" class="line"/>
+    <text x="90" y="1295" class="folder-text">vcs-1/</text>
+    <line x1="105" y1="1310" x2="105" y2="1320" class="line"/>
+    <line x1="105" y1="1320" x2="115" y2="1320" class="line"/>
+    <text x="120" y="1325" class="file-text">gc.properties</text>
+    <line x1="75" y1="1380" x2="75" y2="1390" class="line"/>
+    <line x1="75" y1="1390" x2="85" y2="1390" class="line"/>
+    <text x="90" y="1395" class="file-text">file-system.probe</text>
+    <line x1="45" y1="1450" x2="45" y2="1460" class="line"/>
+    <line x1="45" y1="1460" x2="55" y2="1460" class="line"/>
+    <text x="60" y="1465" class="folder-text">app/</text>
+    <line x1="75" y1="1480" x2="75" y2="1490" class="line"/>
+    <line x1="75" y1="1490" x2="85" y2="1490" class="line"/>
+    <text x="90" y="1495" class="folder-text">src/</text>
+    <line x1="105" y1="1510" x2="105" y2="1520" class="line"/>
+    <line x1="105" y1="1520" x2="115" y2="1520" class="line"/>
+    <text x="120" y="1525" class="folder-text">debug/</text>
+    <line x1="135" y1="1540" x2="135" y2="1550" class="line"/>
+    <line x1="135" y1="1550" x2="145" y2="1550" class="line"/>
+    <text x="150" y="1555" class="file-text">AndroidManifest.xml</text>
+    <line x1="105" y1="1610" x2="105" y2="1620" class="line"/>
+    <line x1="105" y1="1620" x2="115" y2="1620" class="line"/>
+    <text x="120" y="1625" class="folder-text">main/</text>
+    <line x1="135" y1="1640" x2="135" y2="1650" class="line"/>
+    <line x1="135" y1="1650" x2="145" y2="1650" class="line"/>
+    <text x="150" y="1655" class="folder-text">java/</text>
+    <line x1="165" y1="1670" x2="165" y2="1680" class="line"/>
+    <line x1="165" y1="1680" x2="175" y2="1680" class="line"/>
+    <text x="180" y="1685" class="folder-text">io/</text>
+    <line x1="195" y1="1700" x2="195" y2="1710" class="line"/>
+    <line x1="195" y1="1710" x2="205" y2="1710" class="line"/>
+    <text x="210" y="1715" class="folder-text">flutter/</text>
+    <line x1="225" y1="1730" x2="225" y2="1740" class="line"/>
+    <line x1="225" y1="1740" x2="235" y2="1740" class="line"/>
+    <text x="240" y="1745" class="folder-text">plugins/</text>
+    <line x1="255" y1="1760" x2="255" y2="1770" class="line"/>
+    <line x1="255" y1="1770" x2="265" y2="1770" class="line"/>
+    <text x="270" y="1775" class="file-text">GeneratedPluginRegistrant.java</text>
+    <line x1="135" y1="1935" x2="135" y2="1945" class="line"/>
+    <line x1="135" y1="1945" x2="145" y2="1945" class="line"/>
+    <text x="150" y="1950" class="folder-text">kotlin/</text>
+    <line x1="165" y1="1965" x2="165" y2="1975" class="line"/>
+    <line x1="165" y1="1975" x2="175" y2="1975" class="line"/>
+    <text x="180" y="1980" class="folder-text">com/</text>
+    <line x1="195" y1="1995" x2="195" y2="2005" class="line"/>
+    <line x1="195" y1="2005" x2="205" y2="2005" class="line"/>
+    <text x="210" y="2010" class="folder-text">example/</text>
+    <line x1="225" y1="2025" x2="225" y2="2035" class="line"/>
+    <line x1="225" y1="2035" x2="235" y2="2035" class="line"/>
+    <text x="240" y="2040" class="folder-text">smart_fire_robot/</text>
+    <line x1="255" y1="2055" x2="255" y2="2065" class="line"/>
+    <line x1="255" y1="2065" x2="265" y2="2065" class="line"/>
+    <text x="270" y="2070" class="file-text">MainActivity.kt</text>
+    <line x1="135" y1="2230" x2="135" y2="2240" class="line"/>
+    <line x1="135" y1="2240" x2="145" y2="2240" class="line"/>
+    <text x="150" y="2245" class="folder-text">res/</text>
+    <line x1="165" y1="2260" x2="165" y2="2270" class="line"/>
+    <line x1="165" y1="2270" x2="175" y2="2270" class="line"/>
+    <text x="180" y="2275" class="folder-text">drawable/</text>
+    <line x1="195" y1="2290" x2="195" y2="2300" class="line"/>
+    <line x1="195" y1="2300" x2="205" y2="2300" class="line"/>
+    <text x="210" y="2305" class="file-text">launch_background.xml</text>
+    <line x1="165" y1="2360" x2="165" y2="2370" class="line"/>
+    <line x1="165" y1="2370" x2="175" y2="2370" class="line"/>
+    <text x="180" y="2375" class="folder-text">drawable-v21/</text>
+    <line x1="195" y1="2390" x2="195" y2="2400" class="line"/>
+    <line x1="195" y1="2400" x2="205" y2="2400" class="line"/>
+    <text x="210" y="2405" class="file-text">launch_background.xml</text>
+    <line x1="165" y1="2460" x2="165" y2="2470" class="line"/>
+    <line x1="165" y1="2470" x2="175" y2="2470" class="line"/>
+    <text x="180" y="2475" class="folder-text">mipmap-hdpi/</text>
+    <line x1="195" y1="2490" x2="195" y2="2500" class="line"/>
+    <line x1="195" y1="2500" x2="205" y2="2500" class="line"/>
+    <text x="210" y="2505" class="file-text">ic_launcher.png</text>
+    <line x1="165" y1="2560" x2="165" y2="2570" class="line"/>
+    <line x1="165" y1="2570" x2="175" y2="2570" class="line"/>
+    <text x="180" y="2575" class="folder-text">mipmap-mdpi/</text>
+    <line x1="195" y1="2590" x2="195" y2="2600" class="line"/>
+    <line x1="195" y1="2600" x2="205" y2="2600" class="line"/>
+    <text x="210" y="2605" class="file-text">ic_launcher.png</text>
+    <line x1="165" y1="2660" x2="165" y2="2670" class="line"/>
+    <line x1="165" y1="2670" x2="175" y2="2670" class="line"/>
+    <text x="180" y="2675" class="folder-text">mipmap-xhdpi/</text>
+    <line x1="195" y1="2690" x2="195" y2="2700" class="line"/>
+    <line x1="195" y1="2700" x2="205" y2="2700" class="line"/>
+    <text x="210" y="2705" class="file-text">ic_launcher.png</text>
+    <line x1="165" y1="2760" x2="165" y2="2770" class="line"/>
+    <line x1="165" y1="2770" x2="175" y2="2770" class="line"/>
+    <text x="180" y="2775" class="folder-text">mipmap-xxhdpi/</text>
+    <line x1="195" y1="2790" x2="195" y2="2800" class="line"/>
+    <line x1="195" y1="2800" x2="205" y2="2800" class="line"/>
+    <text x="210" y="2805" class="file-text">ic_launcher.png</text>
+    <line x1="165" y1="2860" x2="165" y2="2870" class="line"/>
+    <line x1="165" y1="2870" x2="175" y2="2870" class="line"/>
+    <text x="180" y="2875" class="folder-text">mipmap-xxxhdpi/</text>
+    <line x1="195" y1="2890" x2="195" y2="2900" class="line"/>
+    <line x1="195" y1="2900" x2="205" y2="2900" class="line"/>
+    <text x="210" y="2905" class="file-text">ic_launcher.png</text>
+    <line x1="165" y1="2960" x2="165" y2="2970" class="line"/>
+    <line x1="165" y1="2970" x2="175" y2="2970" class="line"/>
+    <text x="180" y="2975" class="folder-text">values/</text>
+    <line x1="195" y1="2990" x2="195" y2="3000" class="line"/>
+    <line x1="195" y1="3000" x2="205" y2="3000" class="line"/>
+    <text x="210" y="3005" class="file-text">styles.xml</text>
+    <line x1="165" y1="3060" x2="165" y2="3070" class="line"/>
+    <line x1="165" y1="3070" x2="175" y2="3070" class="line"/>
+    <text x="180" y="3075" class="folder-text">values-night/</text>
+    <line x1="195" y1="3090" x2="195" y2="3100" class="line"/>
+    <line x1="195" y1="3100" x2="205" y2="3100" class="line"/>
+    <text x="210" y="3105" class="file-text">styles.xml</text>
+    <line x1="135" y1="3195" x2="135" y2="3205" class="line"/>
+    <line x1="135" y1="3205" x2="145" y2="3205" class="line"/>
+    <text x="150" y="3210" class="file-text">AndroidManifest.xml</text>
+    <line x1="105" y1="3265" x2="105" y2="3275" class="line"/>
+    <line x1="105" y1="3275" x2="115" y2="3275" class="line"/>
+    <text x="120" y="3280" class="folder-text">profile/</text>
+    <line x1="135" y1="3295" x2="135" y2="3305" class="line"/>
+    <line x1="135" y1="3305" x2="145" y2="3305" class="line"/>
+    <text x="150" y="3310" class="file-text">AndroidManifest.xml</text>
+    <line x1="75" y1="3400" x2="75" y2="3410" class="line"/>
+    <line x1="75" y1="3410" x2="85" y2="3410" class="line"/>
+    <text x="90" y="3415" class="file-text">build.gradle</text>
+    <line x1="45" y1="3470" x2="45" y2="3480" class="line"/>
+    <line x1="45" y1="3480" x2="55" y2="3480" class="line"/>
+    <text x="60" y="3485" class="folder-text">gradle/</text>
+    <line x1="75" y1="3500" x2="75" y2="3510" class="line"/>
+    <line x1="75" y1="3510" x2="85" y2="3510" class="line"/>
+    <text x="90" y="3515" class="folder-text">wrapper/</text>
+    <line x1="105" y1="3530" x2="105" y2="3540" class="line"/>
+    <line x1="105" y1="3540" x2="115" y2="3540" class="line"/>
+    <text x="120" y="3545" class="file-text">gradle-wrapper.jar</text>
+    <line x1="105" y1="3565" x2="105" y2="3575" class="line"/>
+    <line x1="105" y1="3575" x2="115" y2="3575" class="line"/>
+    <text x="120" y="3580" class="file-text">gradle-wrapper.properties</text>
+    <line x1="45" y1="3670" x2="45" y2="3680" class="line"/>
+    <line x1="45" y1="3680" x2="55" y2="3680" class="line"/>
+    <text x="60" y="3685" class="file-text">.gitignore</text>
+    <line x1="45" y1="3705" x2="45" y2="3715" class="line"/>
+    <line x1="45" y1="3715" x2="55" y2="3715" class="line"/>
+    <text x="60" y="3720" class="file-text">build.gradle</text>
+    <line x1="45" y1="3740" x2="45" y2="3750" class="line"/>
+    <line x1="45" y1="3750" x2="55" y2="3750" class="line"/>
+    <text x="60" y="3755" class="file-text">gradle.properties</text>
+    <line x1="45" y1="3775" x2="45" y2="3785" class="line"/>
+    <line x1="45" y1="3785" x2="55" y2="3785" class="line"/>
+    <text x="60" y="3790" class="file-text">gradlew</text>
+    <line x1="45" y1="3810" x2="45" y2="3820" class="line"/>
+    <line x1="45" y1="3820" x2="55" y2="3820" class="line"/>
+    <text x="60" y="3825" class="file-text">gradlew.bat</text>
+    <line x1="45" y1="3845" x2="45" y2="3855" class="line"/>
+    <line x1="45" y1="3855" x2="55" y2="3855" class="line"/>
+    <text x="60" y="3860" class="file-text">local.properties</text>
+    <line x1="45" y1="3880" x2="45" y2="3890" class="line"/>
+    <line x1="45" y1="3890" x2="55" y2="3890" class="line"/>
+    <text x="60" y="3895" class="file-text">settings.gradle</text>
+    <line x1="15" y1="3960" x2="25" y2="3960" class="line"/>
+    <text x="30" y="3965" class="folder-text">assets/</text>
+    <line x1="45" y1="3980" x2="45" y2="3990" class="line"/>
+    <line x1="45" y1="3990" x2="55" y2="3990" class="line"/>
+    <text x="60" y="3995" class="folder-text">images/</text>
+    <line x1="75" y1="4010" x2="75" y2="4020" class="line"/>
+    <line x1="75" y1="4020" x2="85" y2="4020" class="line"/>
+    <text x="90" y="4025" class="file-text">firetree.jpg</text>
+    <line x1="75" y1="4045" x2="75" y2="4055" class="line"/>
+    <line x1="75" y1="4055" x2="85" y2="4055" class="line"/>
+    <text x="90" y="4060" class="file-text">firetree2.jpg</text>
+    <line x1="75" y1="4080" x2="75" y2="4090" class="line"/>
+    <line x1="75" y1="4090" x2="85" y2="4090" class="line"/>
+    <text x="90" y="4095" class="file-text">logoblackbg.jpeg</text>
+    <line x1="75" y1="4115" x2="75" y2="4125" class="line"/>
+    <line x1="75" y1="4125" x2="85" y2="4125" class="line"/>
+    <text x="90" y="4130" class="file-text">logonobg.png</text>
+    <line x1="75" y1="4150" x2="75" y2="4160" class="line"/>
+    <line x1="75" y1="4160" x2="85" y2="4160" class="line"/>
+    <text x="90" y="4165" class="file-text">logowhitebg.jpeg</text>
+    <line x1="15" y1="4265" x2="25" y2="4265" class="line"/>
+    <text x="30" y="4270" class="folder-text">ios/</text>
+    <line x1="45" y1="4285" x2="45" y2="4295" class="line"/>
+    <line x1="45" y1="4295" x2="55" y2="4295" class="line"/>
+    <text x="60" y="4300" class="folder-text">Flutter/</text>
+    <line x1="75" y1="4315" x2="75" y2="4325" class="line"/>
+    <line x1="75" y1="4325" x2="85" y2="4325" class="line"/>
+    <text x="90" y="4330" class="folder-text">ephemeral/</text>
+    <line x1="105" y1="4345" x2="105" y2="4355" class="line"/>
+    <line x1="105" y1="4355" x2="115" y2="4355" class="line"/>
+    <text x="120" y="4360" class="file-text">flutter_lldb_helper.py</text>
+    <line x1="105" y1="4380" x2="105" y2="4390" class="line"/>
+    <line x1="105" y1="4390" x2="115" y2="4390" class="line"/>
+    <text x="120" y="4395" class="file-text">flutter_lldbinit</text>
+    <line x1="75" y1="4450" x2="75" y2="4460" class="line"/>
+    <line x1="75" y1="4460" x2="85" y2="4460" class="line"/>
+    <text x="90" y="4465" class="file-text">AppFrameworkInfo.plist</text>
+    <line x1="75" y1="4485" x2="75" y2="4495" class="line"/>
+    <line x1="75" y1="4495" x2="85" y2="4495" class="line"/>
+    <text x="90" y="4500" class="file-text">Debug.xcconfig</text>
+    <line x1="75" y1="4520" x2="75" y2="4530" class="line"/>
+    <line x1="75" y1="4530" x2="85" y2="4530" class="line"/>
+    <text x="90" y="4535" class="file-text">Generated.xcconfig</text>
+    <line x1="75" y1="4555" x2="75" y2="4565" class="line"/>
+    <line x1="75" y1="4565" x2="85" y2="4565" class="line"/>
+    <text x="90" y="4570" class="file-text">Release.xcconfig</text>
+    <line x1="75" y1="4590" x2="75" y2="4600" class="line"/>
+    <line x1="75" y1="4600" x2="85" y2="4600" class="line"/>
+    <text x="90" y="4605" class="file-text">flutter_export_environment.sh</text>
+    <line x1="45" y1="4660" x2="45" y2="4670" class="line"/>
+    <line x1="45" y1="4670" x2="55" y2="4670" class="line"/>
+    <text x="60" y="4675" class="folder-text">Runner/</text>
+    <line x1="75" y1="4690" x2="75" y2="4700" class="line"/>
+    <line x1="75" y1="4700" x2="85" y2="4700" class="line"/>
+    <text x="90" y="4705" class="folder-text">Assets.xcassets/</text>
+    <line x1="105" y1="4720" x2="105" y2="4730" class="line"/>
+    <line x1="105" y1="4730" x2="115" y2="4730" class="line"/>
+    <text x="120" y="4735" class="folder-text">AppIcon.appiconset/</text>
+    <line x1="135" y1="4750" x2="135" y2="4760" class="line"/>
+    <line x1="135" y1="4760" x2="145" y2="4760" class="line"/>
+    <text x="150" y="4765" class="file-text">Contents.json</text>
+    <line x1="135" y1="4785" x2="135" y2="4795" class="line"/>
+    <line x1="135" y1="4795" x2="145" y2="4795" class="line"/>
+    <text x="150" y="4800" class="file-text">Icon-App-1024x1024@1x.png</text>
+    <line x1="135" y1="4820" x2="135" y2="4830" class="line"/>
+    <line x1="135" y1="4830" x2="145" y2="4830" class="line"/>
+    <text x="150" y="4835" class="file-text">Icon-App-20x20@1x.png</text>
+    <line x1="135" y1="4855" x2="135" y2="4865" class="line"/>
+    <line x1="135" y1="4865" x2="145" y2="4865" class="line"/>
+    <text x="150" y="4870" class="file-text">Icon-App-20x20@2x.png</text>
+    <line x1="135" y1="4890" x2="135" y2="4900" class="line"/>
+    <line x1="135" y1="4900" x2="145" y2="4900" class="line"/>
+    <text x="150" y="4905" class="file-text">Icon-App-20x20@3x.png</text>
+    <line x1="135" y1="4925" x2="135" y2="4935" class="line"/>
+    <line x1="135" y1="4935" x2="145" y2="4935" class="line"/>
+    <text x="150" y="4940" class="file-text">Icon-App-29x29@1x.png</text>
+    <line x1="135" y1="4960" x2="135" y2="4970" class="line"/>
+    <line x1="135" y1="4970" x2="145" y2="4970" class="line"/>
+    <text x="150" y="4975" class="file-text">Icon-App-29x29@2x.png</text>
+    <line x1="135" y1="4995" x2="135" y2="5005" class="line"/>
+    <line x1="135" y1="5005" x2="145" y2="5005" class="line"/>
+    <text x="150" y="5010" class="file-text">Icon-App-29x29@3x.png</text>
+    <line x1="135" y1="5030" x2="135" y2="5040" class="line"/>
+    <line x1="135" y1="5040" x2="145" y2="5040" class="line"/>
+    <text x="150" y="5045" class="file-text">Icon-App-40x40@1x.png</text>
+    <line x1="135" y1="5065" x2="135" y2="5075" class="line"/>
+    <line x1="135" y1="5075" x2="145" y2="5075" class="line"/>
+    <text x="150" y="5080" class="file-text">Icon-App-40x40@2x.png</text>
+    <line x1="135" y1="5100" x2="135" y2="5110" class="line"/>
+    <line x1="135" y1="5110" x2="145" y2="5110" class="line"/>
+    <text x="150" y="5115" class="file-text">Icon-App-40x40@3x.png</text>
+    <line x1="135" y1="5135" x2="135" y2="5145" class="line"/>
+    <line x1="135" y1="5145" x2="145" y2="5145" class="line"/>
+    <text x="150" y="5150" class="file-text">Icon-App-60x60@2x.png</text>
+    <line x1="135" y1="5170" x2="135" y2="5180" class="line"/>
+    <line x1="135" y1="5180" x2="145" y2="5180" class="line"/>
+    <text x="150" y="5185" class="file-text">Icon-App-60x60@3x.png</text>
+    <line x1="135" y1="5205" x2="135" y2="5215" class="line"/>
+    <line x1="135" y1="5215" x2="145" y2="5215" class="line"/>
+    <text x="150" y="5220" class="file-text">Icon-App-76x76@1x.png</text>
+    <line x1="135" y1="5240" x2="135" y2="5250" class="line"/>
+    <line x1="135" y1="5250" x2="145" y2="5250" class="line"/>
+    <text x="150" y="5255" class="file-text">Icon-App-76x76@2x.png</text>
+    <line x1="135" y1="5275" x2="135" y2="5285" class="line"/>
+    <line x1="135" y1="5285" x2="145" y2="5285" class="line"/>
+    <text x="150" y="5290" class="file-text">Icon-App-83.5x83.5@2x.png</text>
+    <line x1="105" y1="5345" x2="105" y2="5355" class="line"/>
+    <line x1="105" y1="5355" x2="115" y2="5355" class="line"/>
+    <text x="120" y="5360" class="folder-text">LaunchImage.imageset/</text>
+    <line x1="135" y1="5375" x2="135" y2="5385" class="line"/>
+    <line x1="135" y1="5385" x2="145" y2="5385" class="line"/>
+    <text x="150" y="5390" class="file-text">Contents.json</text>
+    <line x1="135" y1="5410" x2="135" y2="5420" class="line"/>
+    <line x1="135" y1="5420" x2="145" y2="5420" class="line"/>
+    <text x="150" y="5425" class="file-text">LaunchImage.png</text>
+    <line x1="135" y1="5445" x2="135" y2="5455" class="line"/>
+    <line x1="135" y1="5455" x2="145" y2="5455" class="line"/>
+    <text x="150" y="5460" class="file-text">LaunchImage@2x.png</text>
+    <line x1="135" y1="5480" x2="135" y2="5490" class="line"/>
+    <line x1="135" y1="5490" x2="145" y2="5490" class="line"/>
+    <text x="150" y="5495" class="file-text">LaunchImage@3x.png</text>
+    <line x1="135" y1="5515" x2="135" y2="5525" class="line"/>
+    <line x1="135" y1="5525" x2="145" y2="5525" class="line"/>
+    <text x="150" y="5530" class="file-text">README.md</text>
+    <line x1="75" y1="5620" x2="75" y2="5630" class="line"/>
+    <line x1="75" y1="5630" x2="85" y2="5630" class="line"/>
+    <text x="90" y="5635" class="folder-text">Base.lproj/</text>
+    <line x1="105" y1="5650" x2="105" y2="5660" class="line"/>
+    <line x1="105" y1="5660" x2="115" y2="5660" class="line"/>
+    <text x="120" y="5665" class="file-text">LaunchScreen.storyboard</text>
+    <line x1="105" y1="5685" x2="105" y2="5695" class="line"/>
+    <line x1="105" y1="5695" x2="115" y2="5695" class="line"/>
+    <text x="120" y="5700" class="file-text">Main.storyboard</text>
+    <line x1="75" y1="5755" x2="75" y2="5765" class="line"/>
+    <line x1="75" y1="5765" x2="85" y2="5765" class="line"/>
+    <text x="90" y="5770" class="file-text">AppDelegate.swift</text>
+    <line x1="75" y1="5790" x2="75" y2="5800" class="line"/>
+    <line x1="75" y1="5800" x2="85" y2="5800" class="line"/>
+    <text x="90" y="5805" class="file-text">GeneratedPluginRegistrant.h</text>
+    <line x1="75" y1="5825" x2="75" y2="5835" class="line"/>
+    <line x1="75" y1="5835" x2="85" y2="5835" class="line"/>
+    <text x="90" y="5840" class="file-text">GeneratedPluginRegistrant.m</text>
+    <line x1="75" y1="5860" x2="75" y2="5870" class="line"/>
+    <line x1="75" y1="5870" x2="85" y2="5870" class="line"/>
+    <text x="90" y="5875" class="file-text">Info.plist</text>
+    <line x1="75" y1="5895" x2="75" y2="5905" class="line"/>
+    <line x1="75" y1="5905" x2="85" y2="5905" class="line"/>
+    <text x="90" y="5910" class="file-text">Runner-Bridging-Header.h</text>
+    <line x1="45" y1="5965" x2="45" y2="5975" class="line"/>
+    <line x1="45" y1="5975" x2="55" y2="5975" class="line"/>
+    <text x="60" y="5980" class="folder-text">Runner.xcodeproj/</text>
+    <line x1="75" y1="5995" x2="75" y2="6005" class="line"/>
+    <line x1="75" y1="6005" x2="85" y2="6005" class="line"/>
+    <text x="90" y="6010" class="folder-text">project.xcworkspace/</text>
+    <line x1="105" y1="6025" x2="105" y2="6035" class="line"/>
+    <line x1="105" y1="6035" x2="115" y2="6035" class="line"/>
+    <text x="120" y="6040" class="folder-text">xcshareddata/</text>
+    <line x1="135" y1="6055" x2="135" y2="6065" class="line"/>
+    <line x1="135" y1="6065" x2="145" y2="6065" class="line"/>
+    <text x="150" y="6070" class="file-text">IDEWorkspaceChecks.plist</text>
+    <line x1="135" y1="6090" x2="135" y2="6100" class="line"/>
+    <line x1="135" y1="6100" x2="145" y2="6100" class="line"/>
+    <text x="150" y="6105" class="file-text">WorkspaceSettings.xcsettings</text>
+    <line x1="105" y1="6160" x2="105" y2="6170" class="line"/>
+    <line x1="105" y1="6170" x2="115" y2="6170" class="line"/>
+    <text x="120" y="6175" class="file-text">contents.xcworkspacedata</text>
+    <line x1="75" y1="6230" x2="75" y2="6240" class="line"/>
+    <line x1="75" y1="6240" x2="85" y2="6240" class="line"/>
+    <text x="90" y="6245" class="folder-text">xcshareddata/</text>
+    <line x1="105" y1="6260" x2="105" y2="6270" class="line"/>
+    <line x1="105" y1="6270" x2="115" y2="6270" class="line"/>
+    <text x="120" y="6275" class="folder-text">xcschemes/</text>
+    <line x1="135" y1="6290" x2="135" y2="6300" class="line"/>
+    <line x1="135" y1="6300" x2="145" y2="6300" class="line"/>
+    <text x="150" y="6305" class="file-text">Runner.xcscheme</text>
+    <line x1="75" y1="6395" x2="75" y2="6405" class="line"/>
+    <line x1="75" y1="6405" x2="85" y2="6405" class="line"/>
+    <text x="90" y="6410" class="file-text">project.pbxproj</text>
+    <line x1="45" y1="6465" x2="45" y2="6475" class="line"/>
+    <line x1="45" y1="6475" x2="55" y2="6475" class="line"/>
+    <text x="60" y="6480" class="folder-text">Runner.xcworkspace/</text>
+    <line x1="75" y1="6495" x2="75" y2="6505" class="line"/>
+    <line x1="75" y1="6505" x2="85" y2="6505" class="line"/>
+    <text x="90" y="6510" class="folder-text">xcshareddata/</text>
+    <line x1="105" y1="6525" x2="105" y2="6535" class="line"/>
+    <line x1="105" y1="6535" x2="115" y2="6535" class="line"/>
+    <text x="120" y="6540" class="file-text">IDEWorkspaceChecks.plist</text>
+    <line x1="105" y1="6560" x2="105" y2="6570" class="line"/>
+    <line x1="105" y1="6570" x2="115" y2="6570" class="line"/>
+    <text x="120" y="6575" class="file-text">WorkspaceSettings.xcsettings</text>
+    <line x1="75" y1="6630" x2="75" y2="6640" class="line"/>
+    <line x1="75" y1="6640" x2="85" y2="6640" class="line"/>
+    <text x="90" y="6645" class="file-text">contents.xcworkspacedata</text>
+    <line x1="45" y1="6700" x2="45" y2="6710" class="line"/>
+    <line x1="45" y1="6710" x2="55" y2="6710" class="line"/>
+    <text x="60" y="6715" class="folder-text">RunnerTests/</text>
+    <line x1="75" y1="6730" x2="75" y2="6740" class="line"/>
+    <line x1="75" y1="6740" x2="85" y2="6740" class="line"/>
+    <text x="90" y="6745" class="file-text">RunnerTests.swift</text>
+    <line x1="45" y1="6800" x2="45" y2="6810" class="line"/>
+    <line x1="45" y1="6810" x2="55" y2="6810" class="line"/>
+    <text x="60" y="6815" class="file-text">.gitignore</text>
+    <line x1="15" y1="6880" x2="25" y2="6880" class="line"/>
+    <text x="30" y="6885" class="folder-text">lib/</text>
+    <line x1="45" y1="6900" x2="45" y2="6910" class="line"/>
+    <line x1="45" y1="6910" x2="55" y2="6910" class="line"/>
+    <text x="60" y="6915" class="folder-text">screens/</text>
+    <line x1="75" y1="6930" x2="75" y2="6940" class="line"/>
+    <line x1="75" y1="6940" x2="85" y2="6940" class="line"/>
+    <text x="90" y="6945" class="file-text">admin_screen.dart</text>
+    <line x1="75" y1="6965" x2="75" y2="6975" class="line"/>
+    <line x1="75" y1="6975" x2="85" y2="6975" class="line"/>
+    <text x="90" y="6980" class="file-text">camera_screen.dart</text>
+    <line x1="75" y1="7000" x2="75" y2="7010" class="line"/>
+    <line x1="75" y1="7010" x2="85" y2="7010" class="line"/>
+    <text x="90" y="7015" class="file-text">emergency_screen.dart</text>
+    <line x1="75" y1="7035" x2="75" y2="7045" class="line"/>
+    <line x1="75" y1="7045" x2="85" y2="7045" class="line"/>
+    <text x="90" y="7050" class="file-text">home_screen.dart</text>
+    <line x1="75" y1="7070" x2="75" y2="7080" class="line"/>
+    <line x1="75" y1="7080" x2="85" y2="7080" class="line"/>
+    <text x="90" y="7085" class="file-text">login_screen.dart</text>
+    <line x1="75" y1="7105" x2="75" y2="7115" class="line"/>
+    <line x1="75" y1="7115" x2="85" y2="7115" class="line"/>
+    <text x="90" y="7120" class="file-text">map_screen.dart</text>
+    <line x1="75" y1="7140" x2="75" y2="7150" class="line"/>
+    <line x1="75" y1="7150" x2="85" y2="7150" class="line"/>
+    <text x="90" y="7155" class="file-text">robot_map_screen.dart</text>
+    <line x1="75" y1="7175" x2="75" y2="7185" class="line"/>
+    <line x1="75" y1="7185" x2="85" y2="7185" class="line"/>
+    <text x="90" y="7190" class="file-text">role_select_screen.dart</text>
+    <line x1="75" y1="7210" x2="75" y2="7220" class="line"/>
+    <line x1="75" y1="7220" x2="85" y2="7220" class="line"/>
+    <text x="90" y="7225" class="file-text">sign_up_screen.dart</text>
+    <line x1="75" y1="7245" x2="75" y2="7255" class="line"/>
+    <line x1="75" y1="7255" x2="85" y2="7255" class="line"/>
+    <text x="90" y="7260" class="file-text">user_screen.dart</text>
+    <line x1="45" y1="7315" x2="45" y2="7325" class="line"/>
+    <line x1="45" y1="7325" x2="55" y2="7325" class="line"/>
+    <text x="60" y="7330" class="folder-text">services/</text>
+    <line x1="75" y1="7345" x2="75" y2="7355" class="line"/>
+    <line x1="75" y1="7355" x2="85" y2="7355" class="line"/>
+    <text x="90" y="7360" class="file-text">auth_service.dart</text>
+    <line x1="75" y1="7380" x2="75" y2="7390" class="line"/>
+    <line x1="75" y1="7390" x2="85" y2="7390" class="line"/>
+    <text x="90" y="7395" class="file-text">mqtt_service.dart</text>
+    <line x1="75" y1="7415" x2="75" y2="7425" class="line"/>
+    <line x1="75" y1="7425" x2="85" y2="7425" class="line"/>
+    <text x="90" y="7430" class="file-text">theme_notifier.dart</text>
+    <line x1="75" y1="7450" x2="75" y2="7460" class="line"/>
+    <line x1="75" y1="7460" x2="85" y2="7460" class="line"/>
+    <text x="90" y="7465" class="file-text">user_model.dart</text>
+    <line x1="45" y1="7520" x2="45" y2="7530" class="line"/>
+    <line x1="45" y1="7530" x2="55" y2="7530" class="line"/>
+    <text x="60" y="7535" class="folder-text">theme/</text>
+    <line x1="75" y1="7550" x2="75" y2="7560" class="line"/>
+    <line x1="75" y1="7560" x2="85" y2="7560" class="line"/>
+    <text x="90" y="7565" class="file-text">app_colors.dart</text>
+    <line x1="75" y1="7585" x2="75" y2="7595" class="line"/>
+    <line x1="75" y1="7595" x2="85" y2="7595" class="line"/>
+    <text x="90" y="7600" class="file-text">app_theme.dart</text>
+    <line x1="45" y1="7655" x2="45" y2="7665" class="line"/>
+    <line x1="45" y1="7665" x2="55" y2="7665" class="line"/>
+    <text x="60" y="7670" class="folder-text">widgets/</text>
+    <line x1="75" y1="7685" x2="75" y2="7695" class="line"/>
+    <line x1="75" y1="7695" x2="85" y2="7695" class="line"/>
+    <text x="90" y="7700" class="file-text">app_drawer.dart</text>
+    <line x1="75" y1="7720" x2="75" y2="7730" class="line"/>
+    <line x1="75" y1="7730" x2="85" y2="7730" class="line"/>
+    <text x="90" y="7735" class="file-text">app_logo.dart</text>
+    <line x1="75" y1="7755" x2="75" y2="7765" class="line"/>
+    <line x1="75" y1="7765" x2="85" y2="7765" class="line"/>
+    <text x="90" y="7770" class="file-text">theme_toggle_button.dart</text>
+    <line x1="45" y1="7825" x2="45" y2="7835" class="line"/>
+    <line x1="45" y1="7835" x2="55" y2="7835" class="line"/>
+    <text x="60" y="7840" class="file-text">main.dart</text>
+    <line x1="15" y1="7905" x2="25" y2="7905" class="line"/>
+    <text x="30" y="7910" class="folder-text">linux/</text>
+    <line x1="45" y1="7925" x2="45" y2="7935" class="line"/>
+    <line x1="45" y1="7935" x2="55" y2="7935" class="line"/>
+    <text x="60" y="7940" class="folder-text">flutter/</text>
+    <line x1="75" y1="7955" x2="75" y2="7965" class="line"/>
+    <line x1="75" y1="7965" x2="85" y2="7965" class="line"/>
+    <text x="90" y="7970" class="folder-text">ephemeral/</text>
+    <line x1="105" y1="7985" x2="105" y2="7995" class="line"/>
+    <line x1="105" y1="7995" x2="115" y2="7995" class="line"/>
+    <text x="120" y="8000" class="folder-text">.plugin_symlinks/</text>
+    <line x1="75" y1="8055" x2="75" y2="8065" class="line"/>
+    <line x1="75" y1="8065" x2="85" y2="8065" class="line"/>
+    <text x="90" y="8070" class="file-text">CMakeLists.txt</text>
+    <line x1="75" y1="8090" x2="75" y2="8100" class="line"/>
+    <line x1="75" y1="8100" x2="85" y2="8100" class="line"/>
+    <text x="90" y="8105" class="file-text">generated_plugin_registrant.cc</text>
+    <line x1="75" y1="8125" x2="75" y2="8135" class="line"/>
+    <line x1="75" y1="8135" x2="85" y2="8135" class="line"/>
+    <text x="90" y="8140" class="file-text">generated_plugin_registrant.h</text>
+    <line x1="75" y1="8160" x2="75" y2="8170" class="line"/>
+    <line x1="75" y1="8170" x2="85" y2="8170" class="line"/>
+    <text x="90" y="8175" class="file-text">generated_plugins.cmake</text>
+    <line x1="45" y1="8230" x2="45" y2="8240" class="line"/>
+    <line x1="45" y1="8240" x2="55" y2="8240" class="line"/>
+    <text x="60" y="8245" class="folder-text">runner/</text>
+    <line x1="75" y1="8260" x2="75" y2="8270" class="line"/>
+    <line x1="75" y1="8270" x2="85" y2="8270" class="line"/>
+    <text x="90" y="8275" class="file-text">CMakeLists.txt</text>
+    <line x1="75" y1="8295" x2="75" y2="8305" class="line"/>
+    <line x1="75" y1="8305" x2="85" y2="8305" class="line"/>
+    <text x="90" y="8310" class="file-text">main.cc</text>
+    <line x1="75" y1="8330" x2="75" y2="8340" class="line"/>
+    <line x1="75" y1="8340" x2="85" y2="8340" class="line"/>
+    <text x="90" y="8345" class="file-text">my_application.cc</text>
+    <line x1="75" y1="8365" x2="75" y2="8375" class="line"/>
+    <line x1="75" y1="8375" x2="85" y2="8375" class="line"/>
+    <text x="90" y="8380" class="file-text">my_application.h</text>
+    <line x1="45" y1="8435" x2="45" y2="8445" class="line"/>
+    <line x1="45" y1="8445" x2="55" y2="8445" class="line"/>
+    <text x="60" y="8450" class="file-text">.gitignore</text>
+    <line x1="45" y1="8470" x2="45" y2="8480" class="line"/>
+    <line x1="45" y1="8480" x2="55" y2="8480" class="line"/>
+    <text x="60" y="8485" class="file-text">CMakeLists.txt</text>
+    <line x1="15" y1="8550" x2="25" y2="8550" class="line"/>
+    <text x="30" y="8555" class="folder-text">macos/</text>
+    <line x1="45" y1="8570" x2="45" y2="8580" class="line"/>
+    <line x1="45" y1="8580" x2="55" y2="8580" class="line"/>
+    <text x="60" y="8585" class="folder-text">Flutter/</text>
+    <line x1="75" y1="8600" x2="75" y2="8610" class="line"/>
+    <line x1="75" y1="8610" x2="85" y2="8610" class="line"/>
+    <text x="90" y="8615" class="folder-text">ephemeral/</text>
+    <line x1="105" y1="8630" x2="105" y2="8640" class="line"/>
+    <line x1="105" y1="8640" x2="115" y2="8640" class="line"/>
+    <text x="120" y="8645" class="file-text">Flutter-Generated.xcconfig</text>
+    <line x1="105" y1="8665" x2="105" y2="8675" class="line"/>
+    <line x1="105" y1="8675" x2="115" y2="8675" class="line"/>
+    <text x="120" y="8680" class="file-text">flutter_export_environment.sh</text>
+    <line x1="75" y1="8735" x2="75" y2="8745" class="line"/>
+    <line x1="75" y1="8745" x2="85" y2="8745" class="line"/>
+    <text x="90" y="8750" class="file-text">Flutter-Debug.xcconfig</text>
+    <line x1="75" y1="8770" x2="75" y2="8780" class="line"/>
+    <line x1="75" y1="8780" x2="85" y2="8780" class="line"/>
+    <text x="90" y="8785" class="file-text">Flutter-Release.xcconfig</text>
+    <line x1="75" y1="8805" x2="75" y2="8815" class="line"/>
+    <line x1="75" y1="8815" x2="85" y2="8815" class="line"/>
+    <text x="90" y="8820" class="file-text">GeneratedPluginRegistrant.swift</text>
+    <line x1="45" y1="8875" x2="45" y2="8885" class="line"/>
+    <line x1="45" y1="8885" x2="55" y2="8885" class="line"/>
+    <text x="60" y="8890" class="folder-text">Runner/</text>
+    <line x1="75" y1="8905" x2="75" y2="8915" class="line"/>
+    <line x1="75" y1="8915" x2="85" y2="8915" class="line"/>
+    <text x="90" y="8920" class="folder-text">Assets.xcassets/</text>
+    <line x1="105" y1="8935" x2="105" y2="8945" class="line"/>
+    <line x1="105" y1="8945" x2="115" y2="8945" class="line"/>
+    <text x="120" y="8950" class="folder-text">AppIcon.appiconset/</text>
+    <line x1="135" y1="8965" x2="135" y2="8975" class="line"/>
+    <line x1="135" y1="8975" x2="145" y2="8975" class="line"/>
+    <text x="150" y="8980" class="file-text">Contents.json</text>
+    <line x1="135" y1="9000" x2="135" y2="9010" class="line"/>
+    <line x1="135" y1="9010" x2="145" y2="9010" class="line"/>
+    <text x="150" y="9015" class="file-text">app_icon_1024.png</text>
+    <line x1="135" y1="9035" x2="135" y2="9045" class="line"/>
+    <line x1="135" y1="9045" x2="145" y2="9045" class="line"/>
+    <text x="150" y="9050" class="file-text">app_icon_128.png</text>
+    <line x1="135" y1="9070" x2="135" y2="9080" class="line"/>
+    <line x1="135" y1="9080" x2="145" y2="9080" class="line"/>
+    <text x="150" y="9085" class="file-text">app_icon_16.png</text>
+    <line x1="135" y1="9105" x2="135" y2="9115" class="line"/>
+    <line x1="135" y1="9115" x2="145" y2="9115" class="line"/>
+    <text x="150" y="9120" class="file-text">app_icon_256.png</text>
+    <line x1="135" y1="9140" x2="135" y2="9150" class="line"/>
+    <line x1="135" y1="9150" x2="145" y2="9150" class="line"/>
+    <text x="150" y="9155" class="file-text">app_icon_32.png</text>
+    <line x1="135" y1="9175" x2="135" y2="9185" class="line"/>
+    <line x1="135" y1="9185" x2="145" y2="9185" class="line"/>
+    <text x="150" y="9190" class="file-text">app_icon_512.png</text>
+    <line x1="135" y1="9210" x2="135" y2="9220" class="line"/>
+    <line x1="135" y1="9220" x2="145" y2="9220" class="line"/>
+    <text x="150" y="9225" class="file-text">app_icon_64.png</text>
+    <line x1="75" y1="9315" x2="75" y2="9325" class="line"/>
+    <line x1="75" y1="9325" x2="85" y2="9325" class="line"/>
+    <text x="90" y="9330" class="folder-text">Base.lproj/</text>
+    <line x1="105" y1="9345" x2="105" y2="9355" class="line"/>
+    <line x1="105" y1="9355" x2="115" y2="9355" class="line"/>
+    <text x="120" y="9360" class="file-text">MainMenu.xib</text>
+    <line x1="75" y1="9415" x2="75" y2="9425" class="line"/>
+    <line x1="75" y1="9425" x2="85" y2="9425" class="line"/>
+    <text x="90" y="9430" class="folder-text">Configs/</text>
+    <line x1="105" y1="9445" x2="105" y2="9455" class="line"/>
+    <line x1="105" y1="9455" x2="115" y2="9455" class="line"/>
+    <text x="120" y="9460" class="file-text">AppInfo.xcconfig</text>
+    <line x1="105" y1="9480" x2="105" y2="9490" class="line"/>
+    <line x1="105" y1="9490" x2="115" y2="9490" class="line"/>
+    <text x="120" y="9495" class="file-text">Debug.xcconfig</text>
+    <line x1="105" y1="9515" x2="105" y2="9525" class="line"/>
+    <line x1="105" y1="9525" x2="115" y2="9525" class="line"/>
+    <text x="120" y="9530" class="file-text">Release.xcconfig</text>
+    <line x1="105" y1="9550" x2="105" y2="9560" class="line"/>
+    <line x1="105" y1="9560" x2="115" y2="9560" class="line"/>
+    <text x="120" y="9565" class="file-text">Warnings.xcconfig</text>
+    <line x1="75" y1="9620" x2="75" y2="9630" class="line"/>
+    <line x1="75" y1="9630" x2="85" y2="9630" class="line"/>
+    <text x="90" y="9635" class="file-text">AppDelegate.swift</text>
+    <line x1="75" y1="9655" x2="75" y2="9665" class="line"/>
+    <line x1="75" y1="9665" x2="85" y2="9665" class="line"/>
+    <text x="90" y="9670" class="file-text">DebugProfile.entitlements</text>
+    <line x1="75" y1="9690" x2="75" y2="9700" class="line"/>
+    <line x1="75" y1="9700" x2="85" y2="9700" class="line"/>
+    <text x="90" y="9705" class="file-text">Info.plist</text>
+    <line x1="75" y1="9725" x2="75" y2="9735" class="line"/>
+    <line x1="75" y1="9735" x2="85" y2="9735" class="line"/>
+    <text x="90" y="9740" class="file-text">MainFlutterWindow.swift</text>
+    <line x1="75" y1="9760" x2="75" y2="9770" class="line"/>
+    <line x1="75" y1="9770" x2="85" y2="9770" class="line"/>
+    <text x="90" y="9775" class="file-text">Release.entitlements</text>
+    <line x1="45" y1="9830" x2="45" y2="9840" class="line"/>
+    <line x1="45" y1="9840" x2="55" y2="9840" class="line"/>
+    <text x="60" y="9845" class="folder-text">Runner.xcodeproj/</text>
+    <line x1="75" y1="9860" x2="75" y2="9870" class="line"/>
+    <line x1="75" y1="9870" x2="85" y2="9870" class="line"/>
+    <text x="90" y="9875" class="folder-text">project.xcworkspace/</text>
+    <line x1="105" y1="9890" x2="105" y2="9900" class="line"/>
+    <line x1="105" y1="9900" x2="115" y2="9900" class="line"/>
+    <text x="120" y="9905" class="folder-text">xcshareddata/</text>
+    <line x1="135" y1="9920" x2="135" y2="9930" class="line"/>
+    <line x1="135" y1="9930" x2="145" y2="9930" class="line"/>
+    <text x="150" y="9935" class="file-text">IDEWorkspaceChecks.plist</text>
+    <line x1="75" y1="10025" x2="75" y2="10035" class="line"/>
+    <line x1="75" y1="10035" x2="85" y2="10035" class="line"/>
+    <text x="90" y="10040" class="folder-text">xcshareddata/</text>
+    <line x1="105" y1="10055" x2="105" y2="10065" class="line"/>
+    <line x1="105" y1="10065" x2="115" y2="10065" class="line"/>
+    <text x="120" y="10070" class="folder-text">xcschemes/</text>
+    <line x1="135" y1="10085" x2="135" y2="10095" class="line"/>
+    <line x1="135" y1="10095" x2="145" y2="10095" class="line"/>
+    <text x="150" y="10100" class="file-text">Runner.xcscheme</text>
+    <line x1="75" y1="10190" x2="75" y2="10200" class="line"/>
+    <line x1="75" y1="10200" x2="85" y2="10200" class="line"/>
+    <text x="90" y="10205" class="file-text">project.pbxproj</text>
+    <line x1="45" y1="10260" x2="45" y2="10270" class="line"/>
+    <line x1="45" y1="10270" x2="55" y2="10270" class="line"/>
+    <text x="60" y="10275" class="folder-text">Runner.xcworkspace/</text>
+    <line x1="75" y1="10290" x2="75" y2="10300" class="line"/>
+    <line x1="75" y1="10300" x2="85" y2="10300" class="line"/>
+    <text x="90" y="10305" class="folder-text">xcshareddata/</text>
+    <line x1="105" y1="10320" x2="105" y2="10330" class="line"/>
+    <line x1="105" y1="10330" x2="115" y2="10330" class="line"/>
+    <text x="120" y="10335" class="file-text">IDEWorkspaceChecks.plist</text>
+    <line x1="75" y1="10390" x2="75" y2="10400" class="line"/>
+    <line x1="75" y1="10400" x2="85" y2="10400" class="line"/>
+    <text x="90" y="10405" class="file-text">contents.xcworkspacedata</text>
+    <line x1="45" y1="10460" x2="45" y2="10470" class="line"/>
+    <line x1="45" y1="10470" x2="55" y2="10470" class="line"/>
+    <text x="60" y="10475" class="folder-text">RunnerTests/</text>
+    <line x1="75" y1="10490" x2="75" y2="10500" class="line"/>
+    <line x1="75" y1="10500" x2="85" y2="10500" class="line"/>
+    <text x="90" y="10505" class="file-text">RunnerTests.swift</text>
+    <line x1="45" y1="10560" x2="45" y2="10570" class="line"/>
+    <line x1="45" y1="10570" x2="55" y2="10570" class="line"/>
+    <text x="60" y="10575" class="file-text">.gitignore</text>
+    <line x1="15" y1="10640" x2="25" y2="10640" class="line"/>
+    <text x="30" y="10645" class="folder-text">test/</text>
+    <line x1="45" y1="10660" x2="45" y2="10670" class="line"/>
+    <line x1="45" y1="10670" x2="55" y2="10670" class="line"/>
+    <text x="60" y="10675" class="file-text">widget_test.dart</text>
+    <line x1="15" y1="10740" x2="25" y2="10740" class="line"/>
+    <text x="30" y="10745" class="folder-text">web/</text>
+    <line x1="45" y1="10760" x2="45" y2="10770" class="line"/>
+    <line x1="45" y1="10770" x2="55" y2="10770" class="line"/>
+    <text x="60" y="10775" class="folder-text">icons/</text>
+    <line x1="75" y1="10790" x2="75" y2="10800" class="line"/>
+    <line x1="75" y1="10800" x2="85" y2="10800" class="line"/>
+    <text x="90" y="10805" class="file-text">Icon-192.png</text>
+    <line x1="75" y1="10825" x2="75" y2="10835" class="line"/>
+    <line x1="75" y1="10835" x2="85" y2="10835" class="line"/>
+    <text x="90" y="10840" class="file-text">Icon-512.png</text>
+    <line x1="75" y1="10860" x2="75" y2="10870" class="line"/>
+    <line x1="75" y1="10870" x2="85" y2="10870" class="line"/>
+    <text x="90" y="10875" class="file-text">Icon-maskable-192.png</text>
+    <line x1="75" y1="10895" x2="75" y2="10905" class="line"/>
+    <line x1="75" y1="10905" x2="85" y2="10905" class="line"/>
+    <text x="90" y="10910" class="file-text">Icon-maskable-512.png</text>
+    <line x1="45" y1="10965" x2="45" y2="10975" class="line"/>
+    <line x1="45" y1="10975" x2="55" y2="10975" class="line"/>
+    <text x="60" y="10980" class="file-text">favicon.png</text>
+    <line x1="45" y1="11000" x2="45" y2="11010" class="line"/>
+    <line x1="45" y1="11010" x2="55" y2="11010" class="line"/>
+    <text x="60" y="11015" class="file-text">index.html</text>
+    <line x1="45" y1="11035" x2="45" y2="11045" class="line"/>
+    <line x1="45" y1="11045" x2="55" y2="11045" class="line"/>
+    <text x="60" y="11050" class="file-text">manifest.json</text>
+    <line x1="15" y1="11115" x2="25" y2="11115" class="line"/>
+    <text x="30" y="11120" class="folder-text">windows/</text>
+    <line x1="45" y1="11135" x2="45" y2="11145" class="line"/>
+    <line x1="45" y1="11145" x2="55" y2="11145" class="line"/>
+    <text x="60" y="11150" class="folder-text">flutter/</text>
+    <line x1="75" y1="11165" x2="75" y2="11175" class="line"/>
+    <line x1="75" y1="11175" x2="85" y2="11175" class="line"/>
+    <text x="90" y="11180" class="folder-text">ephemeral/</text>
+    <line x1="105" y1="11195" x2="105" y2="11205" class="line"/>
+    <line x1="105" y1="11205" x2="115" y2="11205" class="line"/>
+    <text x="120" y="11210" class="folder-text">.plugin_symlinks/</text>
+    <line x1="135" y1="11225" x2="135" y2="11235" class="line"/>
+    <line x1="135" y1="11235" x2="145" y2="11235" class="line"/>
+    <text x="150" y="11240" class="file-text">geolocator_windows</text>
+    <line x1="135" y1="11260" x2="135" y2="11270" class="line"/>
+    <line x1="135" y1="11270" x2="145" y2="11270" class="line"/>
+    <text x="150" y="11275" class="file-text">permission_handler_windows</text>
+    <line x1="75" y1="11365" x2="75" y2="11375" class="line"/>
+    <line x1="75" y1="11375" x2="85" y2="11375" class="line"/>
+    <text x="90" y="11380" class="file-text">CMakeLists.txt</text>
+    <line x1="75" y1="11400" x2="75" y2="11410" class="line"/>
+    <line x1="75" y1="11410" x2="85" y2="11410" class="line"/>
+    <text x="90" y="11415" class="file-text">generated_plugin_registrant.cc</text>
+    <line x1="75" y1="11435" x2="75" y2="11445" class="line"/>
+    <line x1="75" y1="11445" x2="85" y2="11445" class="line"/>
+    <text x="90" y="11450" class="file-text">generated_plugin_registrant.h</text>
+    <line x1="75" y1="11470" x2="75" y2="11480" class="line"/>
+    <line x1="75" y1="11480" x2="85" y2="11480" class="line"/>
+    <text x="90" y="11485" class="file-text">generated_plugins.cmake</text>
+    <line x1="45" y1="11540" x2="45" y2="11550" class="line"/>
+    <line x1="45" y1="11550" x2="55" y2="11550" class="line"/>
+    <text x="60" y="11555" class="folder-text">runner/</text>
+    <line x1="75" y1="11570" x2="75" y2="11580" class="line"/>
+    <line x1="75" y1="11580" x2="85" y2="11580" class="line"/>
+    <text x="90" y="11585" class="folder-text">resources/</text>
+    <line x1="105" y1="11600" x2="105" y2="11610" class="line"/>
+    <line x1="105" y1="11610" x2="115" y2="11610" class="line"/>
+    <text x="120" y="11615" class="file-text">app_icon.ico</text>
+    <line x1="75" y1="11670" x2="75" y2="11680" class="line"/>
+    <line x1="75" y1="11680" x2="85" y2="11680" class="line"/>
+    <text x="90" y="11685" class="file-text">CMakeLists.txt</text>
+    <line x1="75" y1="11705" x2="75" y2="11715" class="line"/>
+    <line x1="75" y1="11715" x2="85" y2="11715" class="line"/>
+    <text x="90" y="11720" class="file-text">Runner.rc</text>
+    <line x1="75" y1="11740" x2="75" y2="11750" class="line"/>
+    <line x1="75" y1="11750" x2="85" y2="11750" class="line"/>
+    <text x="90" y="11755" class="file-text">flutter_window.cpp</text>
+    <line x1="75" y1="11775" x2="75" y2="11785" class="line"/>
+    <line x1="75" y1="11785" x2="85" y2="11785" class="line"/>
+    <text x="90" y="11790" class="file-text">flutter_window.h</text>
+    <line x1="75" y1="11810" x2="75" y2="11820" class="line"/>
+    <line x1="75" y1="11820" x2="85" y2="11820" class="line"/>
+    <text x="90" y="11825" class="file-text">main.cpp</text>
+    <line x1="75" y1="11845" x2="75" y2="11855" class="line"/>
+    <line x1="75" y1="11855" x2="85" y2="11855" class="line"/>
+    <text x="90" y="11860" class="file-text">resource.h</text>
+    <line x1="75" y1="11880" x2="75" y2="11890" class="line"/>
+    <line x1="75" y1="11890" x2="85" y2="11890" class="line"/>
+    <text x="90" y="11895" class="file-text">runner.exe.manifest</text>
+    <line x1="75" y1="11915" x2="75" y2="11925" class="line"/>
+    <line x1="75" y1="11925" x2="85" y2="11925" class="line"/>
+    <text x="90" y="11930" class="file-text">utils.cpp</text>
+    <line x1="75" y1="11950" x2="75" y2="11960" class="line"/>
+    <line x1="75" y1="11960" x2="85" y2="11960" class="line"/>
+    <text x="90" y="11965" class="file-text">utils.h</text>
+    <line x1="75" y1="11985" x2="75" y2="11995" class="line"/>
+    <line x1="75" y1="11995" x2="85" y2="11995" class="line"/>
+    <text x="90" y="12000" class="file-text">win32_window.cpp</text>
+    <line x1="75" y1="12020" x2="75" y2="12030" class="line"/>
+    <line x1="75" y1="12030" x2="85" y2="12030" class="line"/>
+    <text x="90" y="12035" class="file-text">win32_window.h</text>
+    <line x1="45" y1="12090" x2="45" y2="12100" class="line"/>
+    <line x1="45" y1="12100" x2="55" y2="12100" class="line"/>
+    <text x="60" y="12105" class="file-text">.gitignore</text>
+    <line x1="45" y1="12125" x2="45" y2="12135" class="line"/>
+    <line x1="45" y1="12135" x2="55" y2="12135" class="line"/>
+    <text x="60" y="12140" class="file-text">CMakeLists.txt</text>
+    <line x1="15" y1="12205" x2="25" y2="12205" class="line"/>
+    <text x="30" y="12210" class="file-text">.gitignore</text>
+    <line x1="15" y1="12240" x2="25" y2="12240" class="line"/>
+    <text x="30" y="12245" class="file-text">.metadata</text>
+    <line x1="15" y1="12275" x2="25" y2="12275" class="line"/>
+    <text x="30" y="12280" class="file-text">README.md</text>
+    <line x1="15" y1="12310" x2="25" y2="12310" class="line"/>
+    <text x="30" y="12315" class="file-text">analysis_options.yaml</text>
+    <line x1="15" y1="12345" x2="25" y2="12345" class="line"/>
+    <text x="30" y="12350" class="file-text">pubspec.lock</text>
+    <line x1="15" y1="12380" x2="25" y2="12380" class="line"/>
+    <text x="30" y="12385" class="file-text">pubspec.yaml</text>
+</svg>
